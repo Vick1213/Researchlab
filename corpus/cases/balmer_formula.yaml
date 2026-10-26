@@ -1,0 +1,235 @@
+id: balmer_formula
+title: Balmer's formula for the visible hydrogen lines
+scale: minor
+field: spectroscopy
+date_of_result: "1885"
+snapshot_date: "1884-12-31"
+discoverers: [Johann Jakob Balmer]
+summary: >
+  Johann Jakob Balmer, a mathematics teacher at a girls' secondary school in Basel
+  with no background in spectroscopy, was encouraged by the Basel physicist Eduard
+  Hagenbach-Bischoff to look for a rule behind the four visible lines of hydrogen.
+  Using Anders Ångström's wavelength measurements he found that all four lines are
+  given by one constant multiplied by m^2/(m^2 - 4) for m = 3, 4, 5, 6, with errors
+  of a few parts in 100,000. He predicted further lines for m = 7 and above and
+  found that the ultraviolet lines photographed in the spectra of white stars
+  (Huggins) fit the same rule. Published in 1885, the formula was generalized by
+  Rydberg (1888-1890) in wavenumber form and explained by Bohr in 1913. It was a
+  purely numerical result with no physical model behind it.
+hidden_target:
+  statement: >
+    The wavelengths of the hydrogen lines are a single constant times m^2/(m^2 - 4),
+    with m an integer greater than 2 (m = 3, 4, 5, 6 for the four visible lines).
+    Equivalently, the reciprocal wavelength is proportional to 1/4 - 1/m^2. The
+    series has a limit at the constant itself (about 3645.6 Ångström units) as m grows.
+  formal: "lam = h * m**2 / (m**2 - 4)"
+knowledge_state_before:
+  - claim: >
+      Each chemical element emits a characteristic line spectrum when heated as a gas,
+      and the lines identify the element (Kirchhoff and Bunsen's spectrum analysis).
+    date: "1859-1860"
+    source: Kirchhoff and Bunsen, Annalen der Physik und Chemie (1860)
+    confidence: established
+  - claim: >
+      Wavelengths of the four visible hydrogen lines measured by Ångström (in units
+      of 10^-10 m, later called Ångström units, in air), as tabulated by Balmer -
+      H-alpha (C line) 6562.10, H-beta (F line) 4860.74, H-gamma 4340.1,
+      H-delta (h line) 4101.2. These four numbers are the core dataset.
+    date: "1868"
+    source: >
+      Ångström, Recherches sur le spectre solaire (Uppsala, 1868); values as quoted
+      in Balmer (1885)
+    confidence: established
+  - claim: >
+      Additional hydrogen lines in the near ultraviolet had been photographed in the
+      spectra of white stars such as Vega (Huggins) and in laboratory hydrogen
+      (H. W. Vogel), forming an apparently converging sequence. Balmer had not seen
+      these values when he found the formula but compared them afterward.
+    date: "1879-1880"
+    source: Huggins, "On the photographic spectra of stars", Phil. Trans. R. Soc. (1880)
+    confidence: likely
+  - claim: >
+      Light is a transverse wave in the ether; a spectral line corresponds to a
+      definite vibration frequency of something inside the emitting molecule.
+    confidence: established
+  - claim: >
+      Some regularities in other spectra had been noticed: Hartley found that
+      the components of doublets and triplets in several metal spectra have constant
+      separations when expressed in reciprocal wavelength (1883); Liveing and Dewar
+      noted repeated groupings of lines.
+    date: "1883"
+    source: Hartley, J. Chem. Soc. (1883)
+    confidence: likely
+anomalies:
+  - claim: >
+      No rule connected the four hydrogen wavelengths. Attempts to read them as
+      harmonics of one fundamental vibration, as in an acoustic string or pipe,
+      required large integer multipliers and left most predicted harmonics missing.
+    confidence: established
+  - claim: >
+      Schuster argued that apparent harmonic coincidences in spectra were no more
+      frequent than chance would produce, casting doubt on the harmonic program.
+    date: "1881"
+    source: Schuster, Proc. R. Soc. London (1881)
+    confidence: likely
+assumptions_explicit:
+  - claim: >
+      Spectral lines are emitted by vibrations of the molecule (or of the ether
+      within it), so the lines of one substance should stand in some numerical
+      relation like the overtones of a musical instrument.
+    confidence: established
+  - claim: Wavelength (not frequency or reciprocal wavelength) is the natural quantity in which to tabulate lines.
+    confidence: likely
+assumptions_implicit:
+  - claim: >
+      The relation between lines of one element should be harmonic, i.e. the
+      frequencies should be integer multiples of a fundamental. Balmer's rule is not
+      harmonic - its frequencies are differences (1/4 - 1/m^2), not multiples - but
+      Balmer himself did not frame it as dropping this assumption; he found the
+      form by trial and spoke of it in terms of a "fundamental number".
+    dropped_by_discovery: true
+    confidence: likely
+  - claim: >
+      A spectral regularity should come from a physical model of the vibrating
+      molecule; a bare numerical formula without mechanism is of limited value.
+      Balmer worked without any model and the field accepted the formula anyway.
+    dropped_by_discovery: false
+    confidence: uncertain
+  - claim: >
+      Four measured lines are too few to justify a law; a numerical coincidence
+      is always available. The prediction of a fifth line, and its agreement with
+      Huggins' stellar lines, is what answered this worry.
+    dropped_by_discovery: false
+    confidence: likely
+the_move:
+  types: [empirical_pattern_fit]
+  description: >
+    Balmer searched for a common factor in the four wavelengths. He noticed that
+    they could be written as a fixed number (3645.6) times simple fractions
+    9/5, 4/3, 25/21, 9/8, and that after rewriting 4/3 as 16/12 and 9/8 as 36/32
+    the numerators are 3^2, 4^2, 5^2, 6^2 and each denominator is the numerator
+    minus 4. This is a small rational-function search over an integer index, close
+    to what a symbolic-regression system does, and it gave an immediate prediction
+    for m = 7 (about 3969.7) and a series limit at m to infinity. No deep shared
+    assumption had to be dropped to make the fit; the novelty was persistence with
+    a numerical search that physicists had abandoned after the harmonic program failed.
+verification:
+  how: >
+    The formula reproduced Ångström's four values to within about 1 part in 40,000
+    (Balmer's own statement). Balmer's predicted fifth line (m = 7) matched a
+    hydrogen line already observed at about 3970 in stellar and laboratory spectra,
+    and the further ultraviolet lines in Huggins' stellar photographs fit the series.
+    Rydberg (1890) recast it in wavenumber form as a special case of a general
+    formula for series in many elements, and Bohr (1913) derived it from his model
+    of the hydrogen atom, giving the constant in terms of electron charge, mass and
+    Planck's constant.
+  data:
+    - Ångström's four visible hydrogen wavelengths (1868)
+    - Huggins' photographed ultraviolet lines of white stars (1880)
+    - Later laboratory hydrogen series lines (Lyman 1906, Paschen 1908) for the generalized Rydberg form
+  time_to_acceptance: >
+    Accepted as an empirical rule almost immediately (1885-1890); Rydberg built on
+    it within a few years. Physical explanation took 28 years (Bohr 1913).
+dead_ends:
+  - who: George Johnstone Stoney
+    attempt: >
+      Treated three hydrogen lines as high harmonics (frequency ratio roughly
+      20:27:32) of a single fundamental vibration of the molecule.
+    why_failed: >
+      Required large integers and many unobserved intermediate harmonics; did not
+      extend to the fourth line or predict new ones.
+  - who: Arthur Schuster and others in the harmonic program
+    attempt: Search for integer frequency ratios among lines of many spectra.
+    why_failed: >
+      Coincidences could not be distinguished from chance at the available
+      precision (Schuster's own statistical argument, 1881).
+near_misses:
+  - who: George Johnstone Stoney
+    had: The same hydrogen wavelengths, and the idea of working with reciprocal wavelength (frequency).
+    missed: Looked for products (harmonics) rather than differences of terms, so never reached 1/4 - 1/m^2.
+  - who: Walter Noel Hartley
+    had: The observation that line separations are constant in reciprocal wavelength, i.e. differences matter.
+    missed: Did not apply it to hydrogen or look for a single generating formula.
+oracle_candidates:
+  - kind: data_fit
+    description: >
+      Input the four Ångström wavelengths (6562.10, 4860.74, 4340.1, 4101.2). The
+      candidate must be a formula with at most one fitted real constant and an
+      integer index assigned consecutively to the lines. Require max relative error
+      under 1e-4 on all four lines. The hidden formula with h = 3645.6 gives errors
+      of about 0.3, 1.2, 2.3 and 2.4 parts in 100,000.
+    llm_free: true
+    cost: cheap
+  - kind: prediction
+    description: >
+      Hold out the ultraviolet lines (H-epsilon about 3970, H-zeta about 3889,
+      H-eta about 3835, in air). The candidate fitted on the four visible lines
+      must predict at least the next three within 1e-3 relative error and must have
+      a finite series limit between 3600 and 3700.
+    llm_free: true
+    cost: cheap
+  - kind: symbolic
+    description: >
+      Check with sympy that the candidate is equivalent to h*m**2/(m**2 - 4) under
+      a possible integer index shift and rescaling of the constant.
+    llm_free: true
+    cost: cheap
+  - kind: prediction
+    description: >
+      Generalization stress test (optional, beyond Balmer). Supply the Lyman and
+      Paschen series wavelengths as unseen data and check whether the candidate,
+      re-expressed in reciprocal wavelength, extends to 1/n^2 - 1/m^2 with the same
+      constant. This scores Rydberg's step, not Balmer's.
+    llm_free: true
+    cost: cheap
+contamination:
+  level: total
+  post_cutoff: false
+  notes: >
+    The Balmer formula and the Rydberg formula are standard textbook material, and
+    the four wavelengths themselves are a strong cue: a model shown 6563, 4861, 4340,
+    4102 will recognise hydrogen. To measure search ability rather than recall, use
+    synthetic line lists generated from lam = h * m**2 / (m**2 - k) with a non-4
+    k (e.g. 9 or 16 with a shifted index range), an unfamiliar h, unit rescaling
+    and added noise of a few parts in 100,000; or use a different rational
+    generator altogether (e.g. h*(m+a)/(m-b)) so that the hydrogen answer is wrong.
+    Strip element names and units from the prompt.
+sources:
+  - citation: >
+      Balmer, J. J. (1885). "Notiz über die Spectrallinien des Wasserstoffs."
+      Verhandlungen der Naturforschenden Gesellschaft in Basel 7.
+    kind: primary
+  - citation: >
+      Balmer, J. J. (1885). "Notiz über die Spectrallinien des Wasserstoffs."
+      Annalen der Physik und Chemie, 3rd series, 25, 80-87.
+    kind: primary
+  - citation: Ångström, A. J. (1868). Recherches sur le spectre solaire. Uppsala.
+    kind: primary
+  - citation: Rydberg, J. R. (1890). "On the structure of the line-spectra of the chemical elements." Philosophical Magazine, 5th series, 29.
+    kind: primary
+  - citation: Bohr, N. (1913). "On the constitution of atoms and molecules." Philosophical Magazine, 6th series, 26.
+    kind: primary
+  - citation: Hentschel, K. (2002). Mapping the Spectrum. Techniques of Visual Representation in Research and Teaching. Oxford University Press.
+    kind: secondary
+  - citation: Dictionary of Scientific Biography, entry "Balmer, Johann Jakob."
+    kind: reference
+open_issues:
+  - >
+    Page range of the Basel Verhandlungen paper differs between sources (548-560
+    vs 548-556; DSB also lists a continuation at 750-752). Not given above.
+  - >
+    Confirm whether the comparison with Huggins' ultraviolet lines appears in the
+    first Basel note, the continuation, or only the Annalen version, and whether
+    Hagenbach supplied those values.
+  - >
+    Confirm Ångström's values are air wavelengths exactly as Balmer printed them
+    (6562.10, 4860.74, 4340.1, 4101.2) rather than Ångström's 1868 original table,
+    which some secondary sources give with slightly different rounding.
+  - >
+    Stoney's harmonic paper is variously dated 1868/1869 and 1871 (Phil. Mag. 41);
+    confirm which paper contains the 20:27:32 ratio and whether it covers three or
+    four lines.
+  - Hartley (1883) and Schuster (1881) citations given without volume numbers; confirm.
+  - >
+    Hentschel (2002) is cited as a general history of spectroscopic representation;
+    confirm it discusses Balmer specifically before relying on it.

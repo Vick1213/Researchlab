@@ -20,9 +20,15 @@ tasks/<id>/
   data/                     data shown to the solver
   hidden/                   held-out data and ground truth, never put in a prompt
 oracles/                    non-LLM checkers (law_fit.py, dimensions.py)
-engine/                     task loading, prompts, API client, baseline runner
-eval/runs/                  one JSON record per model run
-docs/                       plan, benchmark-format survey
+engine/
+  models/                   backend interface + anthropic, replay, scripted backends
+  solvers.py                strategies (baseline now; pipeline roles later)
+  experiment.py             runner: tasks x backends x samples -> records, summary
+  scoring.py                reply -> oracle verdict -> reward
+  rl.py                     TaskEnv, batch reward_fn, dataset/trajectory export
+experiments/                experiment configs (YAML)
+eval/runs/                  run outputs: manifest.json, records.jsonl, summary.json
+docs/                       plan, backends + RL hooks, benchmark-format survey
 tools/validate_corpus.py    schema validation for the corpus
 tests/                      oracle and corpus tests
 ```
@@ -33,10 +39,17 @@ tests/                      oracle and corpus tests
 pip install -e '.[dev]'
 python tools/validate_corpus.py                                # validate all cases
 python -m pytest                                               # oracle + corpus tests
-python -m engine.baseline kepler_third_law synthetic --print-prompt
-ANTHROPIC_API_KEY=... python -m engine.baseline kepler_third_law synthetic
-python -m engine.baseline kepler_third_law historical --response-file reply.md --tag manual
+python -m engine prompt kepler_third_law synthetic             # print a prompt
+python -m engine run experiments/smoke_replay.yaml              # offline end-to-end run
+python -m engine plan experiments/kepler_baseline.yaml          # what a real run would do
+python -m engine score kepler_third_law synthetic reply.md      # score a saved reply
+# Real model calls are refused unless asked for explicitly:
+ANTHROPIC_API_KEY=... python -m engine run experiments/kepler_baseline.yaml --allow-model-calls
 ```
+
+Backends are named by spec strings (`anthropic:claude-opus-5-5?effort=high`). Adding
+an open-weight model is one `Backend` subclass; see [docs/backends.md](docs/backends.md),
+which also covers the RL hooks (environment, reward function, dataset export).
 
 ## Status
 
@@ -46,7 +59,7 @@ python -m engine.baseline kepler_third_law historical --response-file reply.md -
 | 2. Case JSON schema + validator | done |
 | 3. First 10 cases | written; see each file's `open_issues` for unverified claims |
 | 4. Kepler oracle | done: fit, held-out transfer, parsimony, dimensional homogeneity |
-| 5. Baseline | harness done; only proxy runs so far (no API key in the build session) |
+| 5. Baseline | experiment framework done and tested offline; no model runs yet |
 | 6. FIRE-Bench / DBench-Bio formats | survey in [docs/benchmark_formats.md](docs/benchmark_formats.md) |
 
 ### The Kepler oracle
@@ -67,13 +80,14 @@ Two variants:
 - `synthetic`: a fictional system with `T ∝ r^1.25`, so recalling 3/2 fails
   (recalled `T**2 = k*r**3` misses by 49%).
 
-### First baseline result (proxy, not an API run)
+### Early signal (informal, not a framework run)
 
-Both variants passed: the historical one with `T**2 = k*a**3`, and the synthetic
-one with `T = k*r**(5/4)`, which the model read off the data in a few log-ratio
-steps and checked on the other bodies. Records are in `eval/runs/`.
+While building the harness, two tool-free Claude subagents were given the exact
+prompts. Both passed: the historical one with `T**2 = k*a**3`, and the synthetic one
+with `T = k*r**(5/4)`, read off the data in a few log-ratio steps. Their replies are
+now the offline fixtures in `tests/fixtures/replies/`.
 
-What this shows: a one-variable power law with clean data is too easy to tell
+What this suggests: a one-variable power law with clean data is too easy to tell
 scaffolding apart from a plain model. It is a smoke test for the harness, not a
 benchmark. Harder obfuscated variants are needed before adding pipeline roles:
 - forms that are not power laws (Balmer-type `1/n^2 - 1/m^2`, Planck-type

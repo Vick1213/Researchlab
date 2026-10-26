@@ -1,0 +1,305 @@
+id: dna_structure
+title: Double-helix structure of DNA
+scale: major
+field: molecular biology
+date_of_result: "1953-04-25"
+snapshot_date: "1953-01-31"
+discoverers: [James D. Watson, Francis Crick]
+summary: >
+  In late February and early March 1953 Watson and Crick, at the Cavendish
+  Laboratory in Cambridge, built a model of DNA as two antiparallel
+  sugar-phosphate chains wound in a right-handed helix around a common axis, with
+  the bases inside, paired by hydrogen bonds, adenine with thymine and guanine
+  with cytosine. The model used X-ray fibre diffraction data from King's College
+  London (Rosalind Franklin, Raymond Gosling and Maurice Wilkins), Chargaff's
+  base-ratio data, and Jerry Donohue's advice that the bases exist in keto rather
+  than enol forms. It was published in Nature on 25 April 1953 alongside papers by
+  Wilkins, Stokes and Wilson and by Franklin and Gosling; a second paper on 30 May
+  1953 described the implied copying mechanism. The structure was compatible with
+  the King's data rather than refined from them; detailed confirmation came from
+  later fibre refinements and, in 1980, single-crystal structures.
+hidden_target:
+  statement: >
+    DNA (B form) is two helical polynucleotide chains coiled right-handedly around
+    a common axis, running in opposite directions (antiparallel). The
+    sugar-phosphate backbones are on the outside; the bases are on the inside,
+    stacked roughly perpendicular to the axis at 3.4 Angstrom intervals, with
+    10 base pairs per turn (34 Angstrom repeat) and an overall diameter of about
+    20 Angstrom. The chains are held together by hydrogen bonds between pairs of
+    bases, each pair being one purine and one pyrimidine: adenine with thymine,
+    guanine with cytosine, with the bases in their keto and amino tautomeric
+    forms. Any base sequence is allowed on one chain, and it determines the
+    sequence on the other (complementarity), which suggests a copying mechanism
+    for genetic material.
+  formal: >
+    rise h = 3.4 A per residue; pitch P = 34 A; residues per turn n = P/h = 10;
+    radius of phosphorus r_P ~ 10 A; two chains related by a dyad perpendicular to
+    the helix axis (antiparallel); pairing map {A:T, T:A, G:C, C:G}; hence
+    [A] = [T], [G] = [C], [A]+[G] = [C]+[T]; C1'-C1' distance approximately equal
+    for A:T and G:C pairs (~10.5-11 A) so both pairs fit the same backbone.
+knowledge_state_before:
+  - claim: DNA is a long polymer of nucleotides (deoxyribose, phosphate, and one of four bases - adenine, guanine, cytosine, thymine) linked by 3'-5' phosphodiester bonds, unbranched.
+    source: Levene (base and sugar chemistry, 1910s-1930s); Todd's group (phosphodiester linkage, ~1951-1952)
+    confidence: established
+  - claim: DNA from pneumococcus transfers a heritable trait (capsule type) between bacteria.
+    date: "1944"
+    source: Avery, MacLeod and McCarty (1944), Journal of Experimental Medicine 79
+    confidence: established
+  - claim: In T2 phage infection, DNA (labelled with 32P) enters the bacterium while most protein (35S) stays outside, supporting DNA as the genetic material of the phage.
+    date: "1952"
+    source: Hershey and Chase (1952), Journal of General Physiology 36
+    confidence: established
+  - claim: In DNA from many organisms the molar amounts of adenine and thymine are nearly equal, and those of guanine and cytosine are nearly equal, while the A+T to G+C ratio varies between species (Chargaff's rules).
+    date: "1950"
+    source: Chargaff (1950), Experientia 6, 201-209; further data 1951-1952
+    confidence: established
+  - claim: X-ray fibre diagrams of DNA show a strong meridional reflection at ~3.3-3.4 Angstrom, interpreted as stacked flat bases.
+    date: "1938"
+    source: Astbury and Bell (1938), Nature
+    confidence: established
+  - claim: Theory of X-ray diffraction by a helix - a continuous helix gives an X-shaped pattern of layer lines with intensities given by Bessel functions; helical parameters (pitch, radius, residues per turn) can be read from the pattern.
+    date: "1952"
+    source: Cochran, Crick and Vand (1952), Acta Crystallographica 5, 581
+    confidence: established
+  - claim: DNA fibres exist in two forms depending on humidity - a crystalline A form at lower water content and a paracrystalline B form at high humidity. The B pattern (e.g. Franklin and Gosling's "Photograph 51", May 1952) shows a helical cross with a 34 Angstrom layer-line spacing and the 3.4 Angstrom meridional reflection, and a missing or weak fourth layer line.
+    date: "1951-1952"
+    source: Franklin and Gosling (1953), Acta Crystallographica 6; Franklin's King's seminar (November 1951)
+    confidence: established
+  - claim: Franklin concluded from density and water uptake that the phosphate groups are on the outside of the structure, accessible to water.
+    date: "1951"
+    confidence: established
+  - claim: The A-form unit cell is face-centred monoclinic, space group C2, which implies a two-fold axis perpendicular to the fibre axis. This information reached Crick through an MRC Biophysics Committee report (December 1952) passed on by Max Perutz in February 1953.
+    date: "1952-12"
+    source: MRC report; see Olby (1974); Cobb and Comfort (2023)
+    confidence: established
+  - claim: The sugar ring is roughly perpendicular to the base plane in nucleosides.
+    date: "1949-1952"
+    source: Furberg, crystal structure of cytidine (1950); Furberg (1952), Acta Chemica Scandinavica
+    confidence: likely
+  - claim: Electrometric titration of DNA suggests the bases are linked by hydrogen bonds, broken on denaturation.
+    date: "1947"
+    source: Gulland, Jordan and Taylor (1947), Journal of the Chemical Society
+    confidence: likely
+  - claim: Pauling and Corey had solved the alpha helix and pleated sheet of proteins (1951) by model building constrained by accurate bond lengths and angles, demonstrating the method.
+    date: "1951"
+    source: Pauling, Corey and Branson (1951), PNAS 37
+    confidence: established
+anomalies:
+  - claim: Chargaff's equalities A~T and G~C had no structural explanation; Chargaff himself did not propose one.
+    confidence: established
+  - claim: The density of the B form fibres admits two or three chains per repeat depending on assumptions about water content; Pauling and Corey, and Watson and Crick's first model (1951), took three.
+    confidence: likely
+  - claim: The bases differ in size (two-ring purines, one-ring pyrimidines) yet the fibre pattern implies a regular helix of constant diameter, which seems incompatible with arbitrary base sequence.
+    confidence: likely
+  - claim: Standard textbooks (e.g. Davidson, The Biochemistry of the Nucleic Acids, 1950) drew guanine and thymine in enol forms, which give hydrogen-bonding patterns that do not produce A:T and G:C pairs of equal size.
+    confidence: likely
+assumptions_explicit:
+  - claim: Structure is to be found by building models with known bond lengths and angles that must also fit the diffraction pattern (Pauling's method), or by direct analysis of the diffraction data (Franklin's preferred route via Patterson functions).
+    confidence: established
+  - claim: The genetic material, if DNA, must carry information in its base sequence; the tetranucleotide hypothesis (regular repeating sequence) was abandoned by many after Chargaff's data.
+    confidence: likely
+assumptions_implicit:
+  - claim: The bases take the tautomeric forms shown in textbooks (enol forms for guanine and thymine).
+    dropped_by_discovery: true
+    source: Donohue's correction to Watson, February 1953; Watson (1968)
+    confidence: established
+  - claim: The phosphate backbone forms the core of the molecule, with the bases outward (as in Watson and Crick's 1951 model and Pauling and Corey's 1953 model).
+    dropped_by_discovery: true
+    confidence: established
+  - claim: Base pairing, if any, would be like with like (A with A, etc.), as Watson tried briefly in February 1953.
+    dropped_by_discovery: true
+    confidence: established
+  - claim: Polynucleotide chains in the structure run in the same direction (parallel), the default for building a helix with identical chains.
+    dropped_by_discovery: true
+    confidence: likely
+  - claim: The number of chains should be three, from density.
+    dropped_by_discovery: true
+    confidence: likely
+  - claim: Phosphate groups are un-ionised (protonated) and can hydrogen-bond to each other at the core.
+    dropped_by_discovery: true
+    source: Pauling and Corey (1953) model required this; Watson and Crick and the King's group regarded DNA in fibres as a sodium salt.
+    confidence: established
+the_move:
+  types: [unify_conflicting_theories, empirical_pattern_fit, trust_data_over_theory, symmetry_invariance]
+  description: >
+    The move was a constraint-satisfaction synthesis by physical model building.
+    From the King's data: helix, 34 Angstrom repeat, 3.4 Angstrom rise, ~20
+    Angstrom diameter, phosphates outside. From the C2 space group: a dyad
+    perpendicular to the axis, hence two chains running in opposite directions.
+    From Donohue: keto tautomers. Watson, moving cardboard base cut-outs, found that
+    A:T and G:C pairs in keto forms have the same overall shape and the same
+    distance between glycosidic bonds, so any sequence fits a regular two-chain
+    helix. The pairing then explained Chargaff's equalities, which Watson and Crick
+    had known for months without using. The key dropped assumptions were the
+    textbook tautomers, bases-outside, and like-with-like pairing.
+verification:
+  how: >
+    Initially by compatibility, not proof: the Franklin-Gosling and Wilkins-Stokes-Wilson
+    papers in the same Nature issue showed the B-form data agreed with a two-chain
+    helix with phosphates outside. Wilkins's group refined the model against fibre
+    data through the 1950s-1960s (Langridge et al. 1960; Arnott and colleagues).
+    Meselson and Stahl (1958) confirmed semi-conservative replication predicted by
+    the pairing. Kornberg's in vitro DNA synthesis (1956-1958) and nearest-neighbour
+    analysis (Josse, Kaiser and Kornberg 1961) supported antiparallel strands.
+    Single-crystal structure of a B-DNA dodecamer (Drew, Wing, Dickerson and
+    colleagues, 1980-1981) confirmed Watson-Crick pairing at atomic resolution, with
+    ~10.1-10.5 bp per turn in crystal and solution rather than exactly 10.
+  data:
+    - B-form fibre diffraction pattern (layer-line spacing, meridional reflections, helix cross)
+    - A-form unit cell and space group C2
+    - Chargaff base ratios across species
+    - Nucleotide bond lengths and angles
+  time_to_acceptance: >
+    Accepted as highly plausible by structural biologists within months; the
+    structure itself was widely accepted by about 1958-1960 after Meselson-Stahl and
+    the fibre refinements. Atomic confirmation 1980. Some alternative side-by-side
+    models were proposed as late as 1976-1979 and rejected.
+dead_ends:
+  - who: Linus Pauling and Robert Corey
+    attempt: Triple helix with the phosphates packed at the centre and bases pointing outward (PNAS 39, 84-97, February 1953; Nature letter 21 February 1953).
+    why_failed: Required un-ionised phosphate groups hydrogen-bonded to each other, which is wrong for the sodium salt under physiological conditions (so the model was not even an acid); used Astbury's poor-quality data rather than the A/B form patterns; bases outward gave no account of Chargaff's ratios or of how chains are held together; the core was too crowded.
+  - who: James Watson and Francis Crick (November-December 1951)
+    attempt: Three-chain helix with phosphates inside, held together by Mg2+ ions, built after Watson's incomplete recollection of Franklin's November 1951 seminar.
+    why_failed: Franklin and Wilkins pointed out that it held about ten times too little water and that phosphates must be outside. Bragg then told Watson and Crick to stop work on DNA.
+  - who: James Watson (February 1953)
+    attempt: Like-with-like base pairing (A:A, G:G, etc.) across a two-chain helix, using textbook enol tautomers.
+    why_failed: Donohue said the enol forms were unlikely; like pairs give a non-uniform diameter, do not explain Chargaff's ratios, and do not fit the observed 34 Angstrom repeat. Crick also objected that it did not give the required symmetry.
+  - who: Tetranucleotide hypothesis (Levene and followers)
+    attempt: DNA as a regular repeat of the four nucleotides in equal amounts.
+    why_failed: Chargaff's base composition data showed unequal and species-specific amounts.
+  - who: Sven Furberg (1949 thesis; 1952 paper)
+    attempt: Single-chain helical models with bases stacked inside.
+    why_failed: Single-chain; no pairing. Partially right about stacking and sugar orientation (closer to a near miss than a dead end).
+near_misses:
+  - who: Rosalind Franklin (with Raymond Gosling)
+    had: The best A and B form diffraction patterns; the conclusion that phosphates are outside; the C2 space group of the A form; by February 1953 (from her notebooks) the recognition that the B form is a two-chain helix and that A and B are both helical, and attention to the fact that purines and pyrimidines could be interchanged without changing the backbone.
+    missed: Specific base pairing and the antiparallel arrangement; she had been pursuing a Patterson-function analysis of the A form rather than model building. Klug (1968, 1974) argued from her notebooks that she was close. Cobb and Comfort (2023) argue she should be seen as an equal contributor to a joint result rather than a near miss.
+  - who: Maurice Wilkins (with Alec Stokes)
+    had: Early crystalline DNA fibres (1950) and the helical interpretation; Stokes worked out helical diffraction theory independently.
+    missed: Did not build a full model with base pairing; the King's group was divided by the Wilkins-Franklin conflict.
+  - who: Erwin Chargaff
+    had: The base-ratio equalities, and met Watson and Crick in Cambridge in mid-1952.
+    missed: Did not interpret the ratios as pairing in a structure.
+  - who: John Griffith
+    had: Calculations in 1952 (at Crick's request) suggesting attractions between A and T and between G and C in stacking or pairing.
+    missed: Did not connect it to a double helix; Crick did not follow up at the time.
+    # confidence: likely; details of Griffith's calculation are thinly documented
+oracle_candidates:
+  - kind: data_fit
+    description: >
+      Helical diffraction check. From candidate model coordinates (or just helical
+      parameters plus atom positions per residue), compute the fibre transform
+      with the Cochran-Crick-Vand Bessel-function formula and compare layer-line
+      spacing (1/34 per Angstrom), the meridional reflection on the 10th layer
+      line (3.4 Angstrom), the helix-cross angle (phosphate radius ~10 Angstrom),
+      and absence or weakness of the 4th layer line (from strand offset) with a
+      digitised Photo 51 / B-form pattern. Score with numerical tolerances
+      (e.g. rise 3.3-3.5, pitch 33-35, diameter 18-22 Angstrom).
+    llm_free: true
+    cost: moderate
+  - kind: symbolic
+    description: >
+      Base-pairing geometry. Given base coordinates in the stated tautomers, check
+      that each proposed pair forms at least two hydrogen bonds with donor-acceptor
+      distances of 2.8-3.0 Angstrom and plausible angles, and that the C1'-C1'
+      distances (and glycosidic bond angles) for the two pair types agree within
+      ~0.5 Angstrom so both fit the same backbone. A like-with-like or enol-form
+      scheme fails mechanically.
+    llm_free: true
+    cost: cheap
+  - kind: consistency
+    description: >
+      Stereochemistry. Build the candidate model with standard bond lengths and
+      angles and check for steric clashes (van der Waals contacts below ~2.8-3.0
+      Angstrom between non-bonded heavy atoms), backbone continuity, and sensible
+      phosphorus-phosphorus distances. Can use a modern force field or a simple
+      contact checker. Rejects Pauling's crowded core.
+    llm_free: true
+    cost: cheap
+  - kind: data_fit
+    description: >
+      Chargaff ratios. The pairing rule implies [A]=[T] and [G]=[C] exactly. Check
+      against held-out base compositions for many species (within experimental
+      scatter, typically a few percent) and that the A+T/G+C ratio is free to vary.
+    llm_free: true
+    cost: cheap
+  - kind: consistency
+    description: >
+      Density and space group. The model must give the measured fibre density with
+      plausible water content and must have a dyad perpendicular to the axis
+      (consistent with C2 for the A form). Mechanical given the model.
+    llm_free: true
+    cost: cheap
+  - kind: prediction
+    description: >
+      Semi-conservative replication. A model with complementary strands predicts
+      that after one generation in 14N medium, 15N-labelled DNA gives a single
+      hybrid band, and after two generations equal hybrid and light bands
+      (Meselson-Stahl 1958). Mechanical once the model is translated into a
+      replication rule; the translation from prose may need an LLM.
+    llm_free: false
+    cost: cheap
+contamination:
+  level: total
+  post_cutoff: false
+  notes: >
+    The double helix is universally known; the hidden target is recalled, not
+    derived, by any model. Its value here is the oracle stack, which is unusually
+    mechanical (diffraction, H-bond geometry, sterics, Chargaff ratios), and the
+    tautomer step as a test of whether an axiomatizer flags "textbook tautomers"
+    as an assumption. A disguised variant (a synthetic polymer with different base
+    shapes and a synthetic fibre pattern computed from a non-B helix) would test
+    whether model-building agents can satisfy the constraints rather than recall
+    the answer.
+sources:
+  - citation: Watson, J. D. and Crick, F. H. C. (1953). "Molecular structure of nucleic acids - a structure for deoxyribose nucleic acid." Nature 171, 737-738.
+    kind: primary
+  - citation: Wilkins, M. H. F., Stokes, A. R. and Wilson, H. R. (1953). "Molecular structure of deoxypentose nucleic acids." Nature 171, 738-740.
+    kind: primary
+  - citation: Franklin, R. E. and Gosling, R. G. (1953). "Molecular configuration in sodium thymonucleate." Nature 171, 740-741.
+    kind: primary
+  - citation: Watson, J. D. and Crick, F. H. C. (1953). "Genetical implications of the structure of deoxyribonucleic acid." Nature 171, 964-967.
+    kind: primary
+  - citation: Franklin, R. E. and Gosling, R. G. (1953). "The structure of sodium thymonucleate fibres. I. The influence of water content." Acta Crystallographica 6.
+    kind: primary
+  - citation: Pauling, L. and Corey, R. B. (1953). "A proposed structure for the nucleic acids." Proceedings of the National Academy of Sciences 39, 84-97.
+    kind: primary
+  - citation: Chargaff, E. (1950). "Chemical specificity of nucleic acids and mechanism of their enzymatic degradation." Experientia 6, 201-209.
+    kind: primary
+  - citation: Avery, O. T., MacLeod, C. M. and McCarty, M. (1944). "Studies on the chemical nature of the substance inducing transformation of pneumococcal types." Journal of Experimental Medicine 79.
+    kind: primary
+  - citation: Hershey, A. D. and Chase, M. (1952). "Independent functions of viral protein and nucleic acid in growth of bacteriophage." Journal of General Physiology 36.
+    kind: primary
+  - citation: Cochran, W., Crick, F. H. C. and Vand, V. (1952). "The structure of synthetic polypeptides. I. The transform of atoms on a helix." Acta Crystallographica 5, 581.
+    kind: primary
+  - citation: Meselson, M. and Stahl, F. W. (1958). "The replication of DNA in Escherichia coli." PNAS 44.
+    kind: primary
+  - citation: Watson, J. D. (1968). The Double Helix. Atheneum.
+    kind: primary
+  - citation: Olby, R. (1974). The Path to the Double Helix. Macmillan.
+    kind: secondary
+  - citation: Judson, H. F. (1979). The Eighth Day of Creation. Simon and Schuster.
+    kind: secondary
+  - citation: Klug, A. (1968). "Rosalind Franklin and the discovery of the structure of DNA." Nature 219.
+    kind: secondary
+  - citation: Maddox, B. (2002). Rosalind Franklin - The Dark Lady of DNA. HarperCollins.
+    kind: secondary
+  - citation: Cobb, M. and Comfort, N. (2023). "What Rosalind Franklin truly contributed to the discovery of DNA's structure." Nature 616, 657.
+    kind: secondary
+open_issues:
+  - >
+    Snapshot. 1953-01-31 is before Watson saw Photo 51 (30 January 1953) in some
+    tellings and before the MRC report reached Crick (February 1953) and before
+    Donohue's correction; but it is after Pauling's preprint was mailed (late
+    January 1953). Decide whether the knowledge pack includes the Photo 51
+    parameters and the C2 space group (both unpublished at T, but in the hands of
+    the discoverers). Recommended - include them, flagged as "unpublished data
+    available to the discoverers", since without them the target is
+    underdetermined; and exclude Pauling-Corey (published February 1953).
+  - Gulland, Jordan and Taylor (1947) hydrogen-bond titration evidence - citation from memory; journal and year should be checked.
+  - Furberg dates (thesis 1949, cytidine structure 1950, Acta Chem Scand 1952) from memory.
+  - Griffith's 1952 calculations and Chargaff's Cambridge visit (often dated late May or June 1952) need source checks.
+  - Franklin's notebook entries (February 1953) as reported by Klug (1968, 1974) - the extent to which she had reached two chains and base interchangeability is debated; check Klug 1974 (Nature 248) and Cobb and Comfort (2023).
+  - The claim that Bragg ordered a halt after the 1951 model is standard (Watson 1968; Olby 1974), but the precise form of the instruction varies between accounts.
+  - Exact helical parameters - Watson and Crick gave 3.4 A rise and 10 residues per turn with a 34 A repeat; phosphorus at ~10 A radius. Modern B-DNA has ~10.5 bp per turn in solution; the oracle tolerance should accept either.
+  - Cobb and Comfort (2023) end page not confirmed; start page 657 confirmed via secondary coverage.

@@ -1,0 +1,325 @@
+id: mendel_ratios
+title: Mendel's segregation ratios (3:1 and 9:3:3:1) in pea hybrids
+scale: major
+field: biology (heredity)
+date_of_result: "1866"
+snapshot_date: "1856-01-01"
+discoverers: [Gregor Mendel]
+summary: >
+  Gregor Mendel, an Augustinian friar at St Thomas's Abbey in Brünn (Brno), crossed
+  true-breeding varieties of the garden pea (Pisum sativum) from about 1856 to 1863,
+  following seven characters that each came in two clearly distinct forms. In the
+  first hybrid generation one form (the "dominant") appeared alone; in the next
+  generation, raised by self-fertilization, both forms reappeared in a ratio close to
+  3:1, and the dominant-looking plants split further into one third constant and two
+  thirds that segregated again (1:2:1 underneath). Pairs of characters combined
+  independently, giving about 9:3:3:1. He explained this by assuming that a hybrid
+  forms equal numbers of germ cells carrying each of the two parental "elements" and
+  that these combine at random. He read the work to the Brünn Natural History
+  Society on 8 February and 8 March 1865; it was printed in the society's
+  Verhandlungen (volume for 1865, issued 1866). It was cited rarely until 1900,
+  when Hugo de Vries, Carl Correns and Erich von Tschermak reported similar results
+  and drew attention to it. In 1936 R. A. Fisher argued that Mendel's data agree with
+  expectation more closely than chance would allow.
+hidden_target:
+  statement: >
+    Each character is controlled by a pair of factors, one from each parent. A
+    hybrid produces germ cells carrying one or the other factor in equal proportion,
+    and germ cells combine at random. With one factor dominant, a monohybrid
+    self-cross gives dominant to recessive phenotypes 3:1 (genotypes 1:2:1); factors
+    for different characters assort independently, giving 9:3:3:1 for two
+    characters, i.e. the terms of (3 + 1)^n.
+  formal: "P(dominant) = 3/4; dihybrid phenotype ratio = (9, 3, 3, 1)/16"
+knowledge_state_before:
+  - claim: >
+      Artificial plant hybridization was an established practice; Kölreuter and
+      Gärtner had made thousands of crosses and observed that hybrids are often
+      uniform in the first generation and variable in later ones, including reversion
+      to parental types.
+    source: Kölreuter (1761-1766); Gärtner, Versuche und Beobachtungen über die Bastarderzeugung im Pflanzenreich (1849)
+    confidence: established
+  - claim: >
+      Knight (1799) and Goss (1820s) had crossed peas and noticed that some seed
+      characters of one parent disappeared in the hybrid and reappeared in later
+      generations, without counting proportions.
+    confidence: likely
+  - claim: >
+      Naudin (1863) proposed that the two specific "essences" of a hybrid separate
+      in its pollen and ovules, explaining reversion to the parent forms, but gave no
+      quantitative rule.
+    date: "1863"
+    source: Naudin, Nouvelles archives du Muséum d'histoire naturelle (1865) and prize memoir of 1861-1863
+    confidence: likely
+  - claim: >
+      The prevailing view of heredity was blending - the offspring are a mixture or
+      average of the parents - with occasional reversion to ancestral forms treated
+      as a separate phenomenon.
+    confidence: established
+  - claim: >
+      Darwin's Origin of Species (1859) made variation and inheritance central to
+      biology but gave no mechanism of inheritance; pangenesis came later (1868).
+    date: "1859"
+    confidence: established
+  - claim: >
+      Basic probability and combinatorics (binomial expansion, expected frequencies)
+      were standard mathematics; Mendel had studied physics and mathematics at
+      Vienna (1851-1853) under Doppler and others.
+    confidence: established
+  - claim: >
+      Mendel's F2 counts for the seven monohybrid experiments (dominant : recessive) -
+      seed shape round:wrinkled 5474:1850 (2.96:1); cotyledon colour yellow:green
+      6022:2001 (3.01:1); seed coat grey-brown:white (flower violet:white) 705:224
+      (3.15:1); pod shape inflated:constricted 882:299 (2.95:1); unripe pod colour
+      green:yellow 428:152 (2.82:1); flower position axial:terminal 651:207 (3.14:1);
+      stem long:short 787:277 (2.84:1). Totals 14949:5010 (2.98:1). These are the
+      oracle data, not knowledge available before the experiments.
+    date: "1865"
+    source: Mendel (1866), Versuche über Pflanzen-Hybriden, section on the first generation from hybrids
+    confidence: established
+  - claim: >
+      Mendel's dihybrid F2 (seed shape x cotyledon colour) - 315 round yellow,
+      101 wrinkled yellow, 108 round green, 32 wrinkled green (556 seeds), against
+      9:3:3:1 expectation 312.75, 104.25, 104.25, 34.75.
+    date: "1865"
+    source: Mendel (1866)
+    confidence: established
+  - claim: >
+      Mendel's test of the F2 dominants by growing their progeny (seed characters) -
+      of 565 round-seeded plants, 193 bred true and 372 segregated (1.93:1); of 519
+      yellow, 166 bred true and 353 segregated (2.13:1). Expected 1:2.
+    date: "1865"
+    source: Mendel (1866)
+    confidence: likely
+anomalies:
+  - claim: >
+      Blending could not account for the reappearance, unchanged, of grandparental
+      characters in later hybrid generations, which hybridizers repeatedly reported.
+    confidence: established
+  - claim: >
+      Hybridizers disagreed on whether hybrid forms were constant or reverted, and no
+      one had found a rule for the proportions of the forms in later generations.
+      Mendel's paper names this as the gap he set out to fill.
+    source: Mendel (1866), introductory remarks
+    confidence: established
+assumptions_explicit:
+  - claim: >
+      The central question of hybridization is the constancy or variability of
+      species and hybrid forms (Gärtner's framing), relevant to the origin of species.
+    confidence: established
+  - claim: Hybrids should be studied as whole organisms, compared overall to their parent species.
+    confidence: likely
+assumptions_implicit:
+  - claim: >
+      Inheritance blends: the hereditary material of the two parents fuses in the
+      offspring. Mendel's elements stay discrete and separate again in the germ cells.
+    dropped_by_discovery: true
+    confidence: established
+  - claim: >
+      The organism is the unit of heredity; one compares the hybrid's total habit to
+      its parents. Mendel instead followed single, contrasting characters separately,
+      chosen to be clearly distinguishable.
+    dropped_by_discovery: true
+    confidence: likely
+  - claim: >
+      Exact counts of offspring classes, over many generations and thousands of
+      individuals, are not needed in natural history; qualitative description of
+      hybrid forms suffices. Mendel counted and compared against combinatorial
+      expectation.
+    dropped_by_discovery: true
+    confidence: likely
+  - claim: >
+      All germ cells of a hybrid are alike (each carries the hybrid nature). Mendel
+      assumed instead that a hybrid makes different kinds of germ cells in equal
+      numbers.
+    dropped_by_discovery: true
+    confidence: likely
+  - claim: >
+      An assumption Mendel added rather than dropped - that factors for different
+      characters always assort independently. It held for the character pairs he
+      reported but fails for linked genes (Bateson, Saunders and Punnett 1905;
+      Morgan 1910-1911).
+    dropped_by_discovery: false
+    confidence: established
+the_move:
+  types: [change_the_question, drop_shared_assumption, empirical_pattern_fit]
+  description: >
+    Mendel changed the question from "are hybrids constant?" to "in what numerical
+    proportions do the parental forms reappear, character by character?" He chose an
+    organism and characters that made this answerable (self-fertilizing, true-breeding
+    varieties, binary characters), counted large numbers over several generations,
+    noticed that the ratios cluster around 3:1, tested the dominant class by
+    progeny-testing (finding 1:2 constant to segregating), and fitted the whole
+    pattern with the combinatorial series A + 2Aa + a. Explaining it required dropping
+    blending and assuming discrete elements separated equally into germ cells. The
+    dihybrid and trihybrid results then matched the product of single-character
+    series, a prediction from the model rather than a separate fit.
+verification:
+  how: >
+    Mendel checked the model internally with di- and trihybrid crosses and with
+    backcrosses of the hybrid to each parent, which gave the expected equal classes.
+    He found that Hieracium, recommended by Nägeli, did not follow the pea pattern
+    (later explained by apomixis). In 1900 de Vries, Correns and Tschermak reported
+    3:1 segregation in several species, and Bateson promoted the work in Britain;
+    Weldon (1902) criticized it from the biometric side. In 1936 Fisher reanalyzed all
+    the data and found the aggregate chi-square too small (often quoted as about 41.6
+    on 84 degrees of freedom, probability of so good a fit about 0.99993), and further
+    that the 2:1 segregating-to-constant ratios matched 2:1 even though, with ten
+    progeny per plant, about 5.6% of segregating plants should have been misclassified
+    as constant (expected ratio closer to 1.7:1). Fisher suggested an assistant may have
+    biased the counts. Later analyses (Edwards 1986; Hartl and Fairbanks 2007; Franklin
+    et al. 2008) disputed parts of the misclassification argument and concluded there
+    is no evidence of deliberate falsification, while agreeing that the overall fit is
+    unusually close; the cause remains open.
+  data:
+    - Mendel's seven monohybrid F2 counts
+    - Mendel's dihybrid and trihybrid F2 counts
+    - Mendel's backcross and progeny-test data
+    - 1900 rediscovery data (de Vries, Correns, Tschermak)
+  time_to_acceptance: >
+    34 years of neglect (1866-1900), then accepted within roughly a decade after
+    1900; integrated with chromosomes by about 1915 (Morgan's group) and with
+    biometry by Fisher (1918).
+dead_ends:
+  - who: Gregor Mendel
+    attempt: Repeated the analysis in Hieracium (hawkweed) on Nägeli's advice, published 1870.
+    why_failed: >
+      Hieracium often reproduces by apomixis (seed without fertilization), so hybrids
+      bred true and did not segregate; Mendel could not generalize his result and
+      Nägeli remained unconvinced.
+  - who: Carl Nägeli
+    attempt: Corresponded with Mendel (1866-1873) and treated heredity in terms of his idioplasm theory.
+    why_failed: Saw Mendel's ratios as an empirical curiosity, not a general law; his own theory had no quantitative predictions.
+  - who: Charles Darwin
+    attempt: Pangenesis (1868), with gemmules from all body parts blending in the offspring.
+    why_failed: >
+      Blending dissipates variation; Galton's transfusion experiments (1871) found no
+      gemmules in blood; it gave no ratios.
+near_misses:
+  - who: Charles Darwin
+    had: >
+      Crossed peloric and normal snapdragons (Antirrhinum); F1 all normal, F2 reported
+      as 88 normal, 2 intermediate, 37 peloric, in The Variation of Animals and Plants
+      under Domestication (1868).
+    missed: Read it as reversion and prepotency, not as a fixed ratio from discrete factors.
+  - who: Charles Naudin
+    had: Segregation of parental essences in the hybrid's germ cells as an explanation of reversion (1863).
+    missed: No counts, no ratios, and no character-by-character analysis.
+  - who: Thomas Andrew Knight and John Goss
+    had: Pea crosses showing disappearance and reappearance of seed colour.
+    missed: Did not count offspring classes or follow later generations systematically.
+oracle_candidates:
+  - kind: data_fit
+    description: >
+      Seven monohybrid F2 counts (5474:1850, 6022:2001, 705:224, 882:299, 428:152,
+      651:207, 787:277). The candidate must state a rational ratio; test each with a
+      chi-square goodness-of-fit (1 df) and require p > 0.05 for all seven and for the
+      pooled 14949:5010. 3:1 passes; 2:1 and 4:1 fail on the pooled data.
+    llm_free: true
+    cost: cheap
+  - kind: prediction
+    description: >
+      Hold out the dihybrid data. A candidate model (factors, dominance, segregation,
+      independent assortment) fitted only on monohybrid data must predict the four
+      dihybrid class proportions; test 315/101/108/32 against the prediction with
+      chi-square (3 df), p > 0.05.
+    llm_free: true
+    cost: cheap
+  - kind: prediction
+    description: >
+      Progeny test of F2 dominants - the model must predict that about 1/3 breed true
+      and 2/3 segregate. Compare with 193:372 and 166:353; chi-square p > 0.05. An
+      option is to require the model also to account for misclassification when only
+      ten progeny per plant are grown (expected 1.7:1).
+    llm_free: true
+    cost: cheap
+  - kind: simulator
+    description: >
+      Synthetic organism simulator with hidden genetics (number of loci, dominance or
+      incomplete dominance, epistasis such as 9:7 or 12:3:1, optional linkage with a
+      chosen recombination fraction, optional segregation distortion). The solver
+      designs crosses within a budget of offspring counts and must output a genetic
+      model; score by predictive likelihood on held-out crosses.
+    llm_free: true
+    cost: moderate
+  - kind: consistency
+    description: >
+      Fisher-style check applied to the solver's own reported or simulated data: the
+      aggregate chi-square across experiments should not be implausibly small or large
+      given the degrees of freedom (e.g. reject if p < 0.001 or p > 0.999).
+    llm_free: true
+    cost: cheap
+contamination:
+  level: total
+  post_cutoff: false
+  notes: >
+    3:1, 9:3:3:1, dominance, segregation and independent assortment are taught in every
+    biology course, and Mendel's counts (5474:1850 etc.) and the Fisher controversy are
+    reproduced in textbooks. Historical replay measures only recall. A synthetic-organism
+    simulator is the useful variant - hide the inheritance system behind renamed traits,
+    and use ratios that differ from Mendel's (incomplete dominance 1:2:1, epistatic
+    9:3:4 or 15:1, linkage giving non-9:3:3:1 dihybrid classes, a three-allele locus),
+    so that pattern-matching to "Mendel" gives the wrong model. Budgeting the number of
+    counted offspring also tests experimental design, which was the real skill.
+sources:
+  - citation: >
+      Mendel, G. (1866). "Versuche über Pflanzen-Hybriden." Verhandlungen des
+      naturforschenden Vereines in Brünn 4 (Abhandlungen, for 1865), 3-47.
+    kind: primary
+  - citation: >
+      Mendel, G. (1870). "Über einige aus künstlicher Befruchtung gewonnenen
+      Hieracium-Bastarde." Verhandlungen des naturforschenden Vereines in Brünn 8.
+    kind: primary
+  - citation: >
+      Fisher, R. A. (1936). "Has Mendel's work been rediscovered?" Annals of Science 1,
+      115-137.
+    kind: primary
+  - citation: >
+      de Vries, H. (1900). "Das Spaltungsgesetz der Bastarde." Berichte der Deutschen
+      Botanischen Gesellschaft 18.
+    kind: primary
+  - citation: >
+      Correns, C. (1900). "G. Mendel's Regel über das Verhalten der Nachkommenschaft der
+      Rassenbastarde." Berichte der Deutschen Botanischen Gesellschaft 18.
+    kind: primary
+  - citation: >
+      Tschermak, E. (1900). "Über künstliche Kreuzung bei Pisum sativum." Berichte der
+      Deutschen Botanischen Gesellschaft 18.
+    kind: primary
+  - citation: Bateson, W. (1902). Mendel's Principles of Heredity. A Defence. Cambridge University Press.
+    kind: primary
+  - citation: >
+      Franklin, A., Edwards, A. W. F., Fairbanks, D. J., Hartl, D. L. and Seidenfeld, T.
+      (2008). Ending the Mendel-Fisher Controversy. University of Pittsburgh Press.
+    kind: secondary
+  - citation: Edwards, A. W. F. (1986). "Are Mendel's results really too close?" Biological Reviews 61.
+    kind: secondary
+  - citation: >
+      Hartl, D. L. and Fairbanks, D. J. (2007). "Mud sticks. On the alleged
+      falsification of Mendel's data." Genetics 175.
+    kind: secondary
+  - citation: Olby, R. C. (1985). Origins of Mendelism. 2nd ed. University of Chicago Press.
+    kind: secondary
+  - citation: Olby, R. C. (1979). "Mendel no Mendelian?" History of Science 17.
+    kind: secondary
+open_issues:
+  - >
+    Fisher's aggregate figures (chi-square about 41.6, 84 df, P about 0.99993) are
+    widely quoted but were not confirmed against the 1936 paper in this pass.
+  - >
+    Progeny-test counts 193:372 and 166:353 are from memory; confirm against the 1866
+    text. Confirm the ten-progeny-per-plant detail for the seed versus plant characters
+    (the seed characters could be scored from seeds of each plant, so the
+    misclassification argument applies mainly to the plant characters).
+  - >
+    Darwin's Antirrhinum counts (88 : 2 : 37) were confirmed only from a secondary
+    teaching page; check against Variation (1868), vol. 2.
+  - >
+    Naudin's publication dates (prize memoir 1861-1862, printed 1863 or 1865) and the
+    Knight (1799) and Goss (1820s) pea work need checking.
+  - >
+    Olby (1979) argues Mendel was not a "Mendelian" - that he did not hold a theory of
+    paired material factors in the modern sense. The hidden_target states the modern
+    reading; the exact content of Mendel's own model (elements, cell formation) is
+    debated and should be stated carefully in any knowledge pack.
+  - Volume and page details for the 1900 rediscovery papers were not checked.
+  - Confirm the 8 February and 8 March 1865 lecture dates and the 1866 issue date.

@@ -1,0 +1,259 @@
+id: boyle_law
+title: Boyle's law (pressure and volume of air vary inversely)
+scale: minor
+field: physics (pneumatics)
+date_of_result: "1662"
+snapshot_date: "1661-12-31"
+discoverers: [Robert Boyle, Richard Towneley, Henry Power, Robert Hooke]
+summary: >
+  In the second edition of New Experiments Physico-Mechanicall, Touching the Spring
+  of the Air (Oxford, 1662), Boyle added "A Defence of the Doctrine Touching the
+  Spring and Weight of the Air" answering the Jesuit Franciscus Linus, who had denied
+  that air could exert the force Boyle claimed. To refute Linus, Boyle compressed air
+  in the sealed short leg of a J-shaped glass tube by pouring mercury into the long
+  leg, and separately let air expand in a tube raised out of a mercury bath. He
+  tabulated volume against total pressure (mercury column plus the atmosphere) and
+  compared it with the values expected if pressure and volume are inversely
+  proportional, a relation he credited as "Mr. Towneley's hypothesis". Towneley and
+  Henry Power had reached the idea from their own barometric and expansion
+  experiments in Lancashire in 1661, and Robert Hooke, then Boyle's assistant, ran
+  related experiments and built apparatus. Edme Mariotte published the same law
+  independently in France in 1676, which is why it is called Mariotte's law there.
+hidden_target:
+  statement: >
+    At fixed temperature, the volume a fixed quantity of air occupies is inversely
+    proportional to the total pressure on it; pressure times volume is constant.
+  formal: "P * V = k"
+knowledge_state_before:
+  - claim: >
+      The atmosphere has weight and supports a column of mercury about 29-30 inches
+      high (Torricelli's experiment); the column falls with altitude (Puy de Dôme).
+    date: "1643-1648"
+    source: Torricelli letter to Ricci (1644); Pascal, Récit de la grande expérience (1648)
+    confidence: established
+  - claim: >
+      Boyle's own 1660 air-pump experiments: air has a "spring" (elasticity), it
+      expands when the surrounding pressure is reduced, and a Torricellian column
+      falls as the receiver is evacuated.
+    date: "1660"
+    source: Boyle, New Experiments Physico-Mechanicall (1660)
+    confidence: established
+  - claim: >
+      Towneley and Power carried a Torricellian tube up Pendle Hill (27 April 1661)
+      and made experiments on the expansion of a trapped bubble of air, and inferred
+      that the air's expansion and the pressure on it are related reciprocally.
+    date: "1661"
+    source: Power, Experimental Philosophy (London, 1663/1664); Webster (1965)
+    confidence: likely
+  - claim: >
+      Boyle's 1662 data (compression, J-tube, from the Defence, Part II, ch. 5). Column A
+      gives the length of the trapped air in equal spaces (quarter-inches as usually
+      read); D the total pressure in inches of mercury (added mercury plus
+      29 2/16 in. atmosphere). Pairs (A, D) -
+      48, 29 2/16; 46, 30 9/16; 44, 31 15/16; 42, 33 8/16; 40, 35 5/16; 38, 37;
+      36, 39 5/16; 34, 41 10/16; 32, 44 3/16; 30, 47 1/16; 28, 50 5/16;
+      26, 54 5/16; 24, 58 13/16; 23, 61 5/16; 22, 64 1/16; 21, 67 1/16;
+      20, 70 11/16; 19, 74 2/16; 18, 77 14/16; 17, 82 12/16; 16, 87 14/16;
+      15, 93 1/16; 14, 100 7/16; 13, 107 13/16; 12, 117 9/16.
+      Boyle's column E gave the "hypothesis" values (e.g. 58 2/8 at 24, 116 4/8 at
+      12). Observed values run 0.5-1.2% above the hypothesis on most rows. A second
+      table (rarefaction, air expanded to up to 32 times its initial volume) is in
+      the same chapter.
+    date: "1662"
+    source: >
+      Boyle, A Defence of the Doctrine Touching the Spring and Weight of the Air (1662);
+      transcriptions on ChemTeam ("Robert Boyle and His Data") and Le Moyne College
+      Classic Chemistry ("Boyle's Law - Formulation")
+    confidence: likely
+  - claim: >
+      An earlier manuscript, "An Experimentall Account of the Compression of Aire
+      made by Mr Boyle", dated 2 October 1661, is held by the Royal Society and has a
+      table of the same structure.
+    date: "1661-10-02"
+    source: Royal Society archive catalogue (Boyle papers)
+    confidence: uncertain
+anomalies:
+  - claim: >
+      Linus (1661) argued that the mercury in the Torricellian tube is held up by an
+      invisible membrane or cord ("funiculus") and that air could not have the spring
+      Boyle attributed to it; the spring hypothesis needed a quantitative test.
+    date: "1661"
+    source: Linus, Tractatus de corporum inseparabilitate (London, 1661)
+    confidence: established
+  - claim: >
+      Hobbes attacked the air pump experiments and the vacuum interpretation
+      generally (Dialogus physicus, 1661), so the epistemic status of air-pump
+      results was itself contested.
+    date: "1661"
+    source: Hobbes, Dialogus physicus de natura aeris (1661); Shapin and Schaffer (1985)
+    confidence: established
+assumptions_explicit:
+  - claim: Air has weight and an elastic spring, like wool or a coiled spring, which resists compression.
+    source: Boyle (1660)
+    confidence: established
+  - claim: >
+      Experimental matters of fact, witnessed and reported with circumstantial
+      detail, are the proper basis for natural philosophy, ahead of causal
+      explanation (the Royal Society program).
+    confidence: established
+assumptions_implicit:
+  - claim: >
+      Temperature need not be controlled or recorded: the room was taken to be
+      constant, and heat was not yet a quantity that entered gas relations. The law
+      as found is an isotherm only by accident of conditions; the temperature
+      dependence came with Amontons (c. 1702) and Charles/Gay-Lussac (1787-1802).
+    dropped_by_discovery: false
+    confidence: likely
+  - claim: >
+      The pressure of the atmosphere must be added to the measured mercury column to
+      get the pressure on the trapped air. This was the key accounting step, stated
+      in the Defence table; earlier workers who looked only at added mercury would
+      not see an inverse relation.
+    dropped_by_discovery: false
+    confidence: likely
+  - claim: >
+      A qualitative demonstration that air has a spring is sufficient to answer
+      critics; a numerical law is not needed. Boyle departed from this by
+      tabulating numbers against a hypothesis, though he presented the law
+      cautiously and did not claim it held beyond his range.
+    dropped_by_discovery: true
+    confidence: uncertain
+  - claim: Air is a single uniform substance whose spring is a property of the air as such, independent of its composition or moisture.
+    dropped_by_discovery: false
+    confidence: uncertain
+the_move:
+  types: [empirical_pattern_fit, new_instrument_or_data]
+  description: >
+    The move was a controlled measurement plus a tabular comparison with a simple
+    hypothesis. Boyle used a sealed J-tube to vary pressure over about a factor of
+    four, counted total pressure including the atmosphere, and printed observed
+    values next to those predicted by reciprocal proportion. The hypothesis itself
+    came from Towneley's reading of Power's data. No deep assumption was dropped;
+    the novelty was turning the qualitative "spring of the air" into a numerical
+    relation good to about 1%, at a time when published quantitative laws in
+    physics were rare.
+verification:
+  how: >
+    Boyle checked both compression (to about 4 atmospheres) and rarefaction (to
+    about 1/32) in the same publication. Hooke reported further experiments in
+    Micrographia (1665). Mariotte independently verified the law in France and
+    published it in his Discours de la nature de l'air (1676), with the explicit
+    statement that air condenses in proportion to the weight loading it. Later
+    18th-19th century work (e.g. Regnault in the 1840s) showed deviations at high
+    pressure, making it a limiting law for ideal gases.
+  data:
+    - Boyle 1662 compression table (25 rows)
+    - Boyle 1662 rarefaction table
+    - Mariotte 1676 measurements
+  time_to_acceptance: >
+    Rapid in England (1662-1665) among Royal Society circles; on the Continent it
+    became standard after Mariotte (1676). Deviations for real gases were not
+    measured until the 19th century.
+dead_ends:
+  - who: Franciscus Linus
+    attempt: Explained the Torricellian and air-pump phenomena by an invisible "funiculus" pulling the mercury up, denying a significant spring of the air.
+    why_failed: Gave no quantitative predictions; Boyle's J-tube table showed a regular, measured relation that the funiculus account could not supply.
+  - who: Thomas Hobbes
+    attempt: Plenist explanation of the air-pump results with no vacuum and no elastic air in Boyle's sense.
+    why_failed: >
+      Not refuted on numbers so much as sidelined by the experimental program;
+      offered no rival quantitative law.
+near_misses:
+  - who: Henry Power and Richard Towneley
+    had: Expansion data for trapped air at different pressures (1661) and the reciprocal hypothesis itself.
+    missed: >
+      Did not publish a systematic table first; Power's book appeared in 1663/1664,
+      after Boyle's Defence. Their data covered a narrower range.
+  - who: Robert Hooke
+    had: Assisted Boyle and ran his own rarefaction experiments.
+    missed: >
+      Did not publish first; his role in the 1662 experiments is debated
+      (sources disagree on whether he built the J-tube apparatus).
+oracle_candidates:
+  - kind: data_fit
+    description: >
+      Use Boyle's 25-row compression table (A in spaces, D in inches of mercury,
+      convert fractions exactly). Fit candidate laws D = f(A) with at most two free
+      parameters. Pass if the candidate is a power law with exponent -1 +/- 0.05, or
+      equivalent, and max relative error is under 2% on all rows. The reciprocal law
+      with the constant fixed by the first row gives errors 0 to 1.2%.
+    llm_free: true
+    cost: cheap
+  - kind: prediction
+    description: >
+      Fit on the compression table only; predict the rarefaction table (pressure at
+      volumes up to 32 times the initial). Require relative error under 5% across the
+      range the table covers.
+    llm_free: true
+    cost: cheap
+  - kind: consistency
+    description: >
+      Check that the candidate uses total pressure (mercury column plus atmosphere),
+      not the added mercury alone: refit with the atmospheric offset as a free
+      parameter and require the fitted offset within 10% of 29 2/16 inches.
+    llm_free: true
+    cost: cheap
+  - kind: simulator
+    description: >
+      Synthetic gas simulator with a hidden equation of state (ideal, or van der
+      Waals with chosen a and b, or a non-integer polytrope P V^n = const). The
+      solver designs J-tube style measurements and must recover the law within
+      stated tolerance. Useful for decontaminated variants.
+    llm_free: true
+    cost: moderate
+contamination:
+  level: total
+  post_cutoff: false
+  notes: >
+    PV = const is among the most recalled laws in physics and the table itself is
+    widely reproduced online. Recall cannot be separated from inference on the
+    historical data. Measuring anything requires obfuscation - rename quantities,
+    rescale units, remove the atmospheric offset from the description so that the
+    solver has to infer that an additive pressure term is needed, or use a simulator
+    with a non-unit exponent (P V^1.4) or a van der Waals correction so that
+    reciting "Boyle" gives the wrong answer.
+sources:
+  - citation: >
+      Boyle, R. (1662). New Experiments Physico-Mechanicall, Touching the Spring of the
+      Air, and its Effects. 2nd ed., Oxford, with "A Defence of the Doctrine Touching
+      the Spring and Weight of the Air" (Part II, chapter 5 contains the tables).
+    kind: primary
+  - citation: Power, H. (1664). Experimental Philosophy, in Three Books. London.
+    kind: primary
+  - citation: Hooke, R. (1665). Micrographia. London.
+    kind: primary
+  - citation: Mariotte, E. (1676). Discours de la nature de l'air. Paris.
+    kind: primary
+  - citation: Linus, F. (1661). Tractatus de corporum inseparabilitate. London.
+    kind: primary
+  - citation: >
+      Webster, C. (1965). "The discovery of Boyle's law, and the concept of the
+      elasticity of air in the seventeenth century." Archive for History of Exact
+      Sciences 2.
+    kind: secondary
+  - citation: >
+      Shapin, S. and Schaffer, S. (1985). Leviathan and the Air-Pump. Hobbes, Boyle,
+      and the Experimental Life. Princeton University Press.
+    kind: secondary
+  - citation: ChemTeam, "Robert Boyle and His Data" (transcription of the 1662 table).
+    url: https://www.chemteam.info/GasLaw/Gas-Boyle-Data.html
+    kind: reference
+  - citation: Giunta, C. Classic Chemistry, "Boyle's Law - Formulation" (Le Moyne College).
+    url: https://web.lemoyne.edu/GIUNTA/classicalcs/boyleform.html
+    kind: reference
+open_issues:
+  - >
+    Compression table values were taken from a transcription and confirmed only for
+    rows 48, 46, 44, 24, 12 against a second transcription; check every row against a
+    scan of the 1662 edition. Also confirm that one "space" is a quarter inch.
+  - The rarefaction table numbers are not reproduced here; transcribe them from the 1662 text.
+  - >
+    Power's Experimental Philosophy carries the date 1664 on its title page but some
+    sources say 1663; confirm. Confirm the Pendle Hill date (27 April 1661).
+  - >
+    Hooke's exact role: whether he built the J-tube, ran the 1662 trials, and what
+    Micrographia (1665) reports on air compression. Sources disagree.
+  - Confirm the 2 October 1661 Royal Society manuscript and its relation to the printed table.
+  - >
+    Confirm Mariotte's wording and whether his Discours (1676) was the second of his
+    Essais de physique; confirm Regnault's high-pressure deviations date.

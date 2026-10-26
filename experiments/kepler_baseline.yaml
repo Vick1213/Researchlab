@@ -1,0 +1,18 @@
+# Plain-model baseline on both Kepler variants. Runs the Claude API, so it needs
+# ANTHROPIC_API_KEY and --allow-model-calls:
+#   python -m engine plan experiments/kepler_baseline.yaml
+#   python -m engine run  experiments/kepler_baseline.yaml --allow-model-calls
+name: kepler_baseline
+tasks:
+  - kepler_third_law:historical
+  - kepler_third_law:synthetic
+backends:
+  - anthropic:claude-opus-5-5?effort=high
+  # Add open-weight models here once their backend is registered, e.g.
+  # - vllm:Qwen/Qwen3-32B?base_url=http://localhost:8000/v1&temperature=0.7
+solver:
+  name: baseline
+samples: 5
+reward:
+  scheme: binary
+max_workers: 4

@@ -1,0 +1,362 @@
+id: plate_tectonics
+title: Seafloor spreading and plate tectonics
+scale: major
+field: geophysics
+date_of_result: "1963-09-07"
+snapshot_date: "1960-06-30"
+discoverers:
+  - Alfred Wegener (continental drift, 1912/1915)
+  - Harry Hess (seafloor spreading, circulated 1960, published 1962)
+  - Robert S. Dietz (seafloor spreading, 1961)
+  - Frederick Vine
+  - Drummond Matthews
+  - Lawrence Morley
+  - J. Tuzo Wilson
+  - Dan McKenzie
+  - Robert L. Parker
+  - W. Jason Morgan
+  - Xavier Le Pichon
+summary: >
+  Wegener proposed in 1912 that the continents had once been joined and had
+  drifted apart. The proposal was rejected by most geologists, especially in North
+  America, because no adequate mechanism was known and because it conflicted with
+  the belief that continents could not move through a strong ocean floor. In the
+  1950s paleomagnetism revived drift, and marine geophysics revealed a global
+  mid-ocean ridge system, low ridge-flank sediment thickness, high ridge heat flow
+  and linear magnetic anomalies. Hess (circulated 1960, published 1962) and Dietz
+  (1961) proposed that ocean floor is created at ridges and destroyed at trenches.
+  Vine and Matthews (1963) and, independently, Morley (rejected manuscripts, 1963)
+  explained the magnetic stripes as a tape recording of field reversals in
+  spreading crust; Vine (1966) and Pitman and Heirtzler (1966) showed symmetric
+  anomaly patterns matching the land-based reversal timescale. Wilson (1965)
+  introduced transform faults, confirmed seismologically by Sykes (1967).
+  McKenzie and Parker (1967) and Morgan (1968) described motions as rigid-plate
+  rotations on a sphere; Isacks, Oliver and Sykes (1968) tied seismicity to plate
+  boundaries. By about 1968-1970 plate tectonics was the consensus. The case
+  snapshot is mid-1960, so the target is seafloor spreading plus the rigid-plate
+  kinematics that followed, not drift as such.
+hidden_target:
+  statement: >
+    The outer shell of the Earth (lithosphere) is divided into a small number of
+    rigid plates that move relative to one another. New ocean floor is created
+    continuously by upwelling at mid-ocean ridges and spreads symmetrically away
+    from them; old ocean floor descends back into the mantle at deep-sea trenches,
+    along inclined zones of earthquakes. Continents are embedded in plates and
+    ride passively with them rather than ploughing through oceanic crust; this is
+    how the drift Wegener inferred takes place. Because the Earth's magnetic field
+    reverses, spreading crust records the reversals as stripes of alternating
+    magnetisation, symmetric about the ridge. Ridge offsets are transform faults,
+    whose slip sense is opposite to the apparent offset and which are active only
+    between ridge segments. Relative plate motion is a rotation about an Euler
+    pole, so spreading rate varies as the sine of angular distance from that pole
+    and transform faults lie on small circles about it. The ocean floor is
+    therefore young (under ~200 Myr), and sediment thickness and age increase away
+    from ridges.
+  formal: >
+    For two plates A, B with angular velocity omega about pole P, velocity at
+    point x on the boundary: v = omega x r(x); |v| = |omega| R sin(theta), with
+    theta the angular distance from P. Seafloor age t(x) = d(x) / u where d is
+    distance from the ridge axis and u the half-spreading rate. Remanent
+    magnetisation M(x) = sign(B(t(x))) where B(t) is the geomagnetic polarity
+    history.
+knowledge_state_before:
+  - claim: Wegener's hypothesis of continental drift, with the fit of the Atlantic coastlines, matching geology and fossils (Glossopteris flora, Mesosaurus) across the South Atlantic, and Permo-Carboniferous glacial deposits in now-tropical southern continents.
+    date: "1912-1929"
+    source: Wegener, "Die Entstehung der Kontinente", Petermanns Geographische Mitteilungen (1912); Die Entstehung der Kontinente und Ozeane (1915; 4th ed. 1929)
+    confidence: established
+  - claim: Isostasy - the crust floats on a denser substratum, continents (sial) being lighter than ocean floor (sima); continents stand high because they are thick and light.
+    source: Airy and Pratt (1855); Dutton (1889)
+    confidence: established
+  - claim: Arthur Holmes proposed that thermal convection in the mantle could carry continents apart, with new ocean floor forming over rising currents and material descending under continental margins.
+    date: "1928-1931"
+    source: Holmes, "Radioactivity and Earth movements", Transactions of the Geological Society of Glasgow (1931)
+    confidence: established
+  - claim: Du Toit compiled detailed geological correlations between South America and southern Africa supporting drift.
+    date: "1937"
+    source: du Toit, Our Wandering Continents (1937)
+    confidence: established
+  - claim: Paleomagnetic apparent polar wander paths computed from European and North American rocks diverge, and can be brought together if the Atlantic is closed. Rock magnetism groups (Runcorn, Irving, Creer, Blackett) took this as support for drift.
+    date: "1954-1960"
+    source: Irving (1956); Runcorn (1956); Creer, Irving and Runcorn (1954)
+    confidence: established
+  - claim: Many rocks are magnetised opposite to the present field. Brunhes (1906) and Matuyama (1929) reported reversely magnetised volcanic rocks. Whether this records field reversal or self-reversal in the minerals was unresolved; self-reversal had been demonstrated in at least one rock (Haruna dacite, Nagata 1951-1952).
+    confidence: established
+  - claim: A continuous mid-ocean ridge system runs through all the oceans, with a central rift valley along much of the Mid-Atlantic Ridge and a band of shallow earthquakes following the ridge crest.
+    date: "1956-1959"
+    source: Ewing and Heezen (1956); Heezen, Tharp and Ewing (1959), The Floors of the Oceans I. The North Atlantic (GSA Special Paper 65)
+    confidence: established
+  - claim: Seismic refraction shows ocean crust is thin (~5-7 km) and basaltic, quite unlike continental crust.
+    source: Ewing, Raitt, Hill and others, 1950s
+    confidence: established
+  - claim: Heat flow through the ocean floor is roughly equal to that through continents despite the absence of granitic radioactive heat sources, and higher than average at some ridge crests.
+    source: Revelle and Maxwell (1952); Bullard, Maxwell and Revelle (1956); Von Herzen (1959)
+    confidence: likely
+  - claim: Deep-sea sediment layers are much thinner than expected from known sedimentation rates over the whole of geological time; no ocean-floor rocks older than Cretaceous had been dredged or cored.
+    confidence: likely
+  - claim: Deep earthquakes occur in planar zones dipping beneath island arcs and continental margins to depths of ~700 km (Wadati 1928-1935; Benioff 1949, 1954). Deep-sea trenches have large negative gravity anomalies (Vening Meinesz, 1930s).
+    confidence: established
+  - claim: Large linear magnetic anomalies, roughly north-south, cover the sea floor off the western United States and are offset by hundreds of kilometres along east-west fracture zones (e.g. Murray, Mendocino).
+    date: "1958"
+    source: Mason (1958), Geophysical Journal of the Royal Astronomical Society; full survey Mason and Raff (1961) and Raff and Mason (1961), GSA Bulletin 72
+    confidence: established
+  - claim: Long horizontal strike-slip displacements on land faults (San Andreas, Great Glen, Alpine Fault of New Zealand) of hundreds of kilometres were accepted by some geologists in the 1950s.
+    source: Hill and Dibblee (1953) for the San Andreas
+    confidence: likely
+  - claim: An expanding-Earth model (Carey, Heezen in the late 1950s) was offered to explain the ridges and the dispersal of continents without subduction.
+    source: Carey (1958), "The tectonic approach to continental drift", in Continental Drift - A Symposium, Hobart
+    confidence: established
+anomalies:
+  - claim: Matching fossils, rock sequences and glacial deposits across oceans are unexplained without either land bridges that have since sunk or continental movement.
+    confidence: established
+  - claim: Paleomagnetic poles from different continents disagree for the same geological age if the continents have been fixed.
+    confidence: established
+  - claim: Ocean floor sediments are too thin, and ocean floor rocks too young, for permanent ocean basins of great age.
+    confidence: likely
+  - claim: The mid-ocean ridge is a global feature with high heat flow, a central rift and shallow seismicity, with no accepted explanation.
+    confidence: established
+  - claim: The magnetic anomalies off western North America are linear, long and offset by fracture zones, but no one had a model for their origin. Their offset across the Mendocino zone (over 1000 km by some correlations) implied enormous lateral displacements.
+    confidence: established
+  - claim: Inclined deep earthquake zones under arcs have no explanation in a static Earth.
+    confidence: established
+assumptions_explicit:
+  - claim: Ocean basins and continents are permanent features (permanentism, especially in North America following Dana).
+    confidence: established
+  - claim: The Earth has been contracting as it cools, producing mountain belts by horizontal compression (contractionism; Suess, Das Antlitz der Erde, 1883-1909). By 1960 this was in decline because radioactive heating undermined secular cooling, but it shaped expectations.
+    confidence: likely
+  - claim: The Earth's crust and mantle are too strong for continents to be pushed across the ocean floor by the forces Wegener invoked (pole-fleeing force, tidal forces).
+    source: Jeffreys, The Earth (1924 and later editions)
+    confidence: established
+  - claim: Geological theories should be built inductively from accumulated field observation; grand hypotheses ahead of the evidence are suspect (a methodological norm especially in American geology).
+    source: Oreskes (1999)
+    confidence: likely
+assumptions_implicit:
+  - claim: The ocean floor is a passive, old, permanent surface; it is not being created or destroyed.
+    dropped_by_discovery: true
+    confidence: established
+  - claim: If continents move, they must move through (plough across) the oceanic crust, so the mechanical question is whether sial can displace sima.
+    dropped_by_discovery: true
+    confidence: established
+  - claim: The relevant mechanical units are continents versus oceans (compositional crust), rather than mechanically defined rigid lithospheric plates that contain both.
+    dropped_by_discovery: true
+    confidence: likely
+  - claim: The geomagnetic field has always had the same polarity; reverse magnetisation is a rock property (self-reversal) rather than a field event.
+    dropped_by_discovery: true
+    confidence: likely
+  - claim: Large horizontal movements, if they occur, would be visible as compressional deformation at the leading edge rather than absorbed by disappearance of crust into the mantle.
+    dropped_by_discovery: true
+    confidence: uncertain
+  - claim: Earth's radius is constant.
+    dropped_by_discovery: false
+    source: Expanding-Earth advocates dropped it; plate tectonics kept it, and needed subduction because of it.
+    confidence: established
+the_move:
+  types: [drop_shared_assumption, new_instrument_or_data, unify_conflicting_theories, trust_data_over_theory, symmetry_invariance]
+  description: >
+    The ocean floor itself became the moving element: rather than continents
+    ploughing through a fixed ocean crust, crust is made at ridges and consumed at
+    trenches, and continents ride along. That one change reconciled the drift
+    evidence with the mechanical objection of Jeffreys and others, and explained
+    the ridges, heat flow, thin sediment and trenches together. Vine, Matthews and
+    Morley then joined two apparently unrelated ideas (field reversals, still
+    doubted, and seafloor spreading, still speculative) and predicted a testable
+    symmetric pattern; the symmetry of anomalies about the ridge was the decisive
+    observational signature. Wilson's transform faults and the McKenzie-Parker and
+    Morgan treatment of motion as rotations of rigid caps on a sphere turned the
+    picture into quantitative kinematics. The new data were from wartime and
+    Cold-War marine instruments (echo sounders, towed proton magnetometers,
+    the WWSSN seismograph network from the early 1960s). The opponents' long
+    rejection of drift (Jeffreys, many American geologists) is an instance of
+    trust_theory_over_data on their side; that type is not listed in the move
+    because the move was the reverse.
+verification:
+  how: >
+    (1) Magnetic anomaly profiles across the Reykjanes Ridge and the Pacific-Antarctic
+    Ridge (Eltanin-19) were symmetric about the axis and matched a forward model built
+    from the Cox-Doell-Dalrymple land reversal timescale, including the short
+    Jaramillo event, at constant spreading rate (Vine 1966; Pitman and Heirtzler 1966).
+    (2) Earthquake focal mechanisms on oceanic fracture zones showed the slip sense
+    predicted for transform faults, not transcurrent offset (Sykes 1967).
+    (3) Rigid-rotation fits: spreading rates and fracture-zone azimuths in the North
+    Pacific and Atlantic fit single Euler poles (McKenzie and Parker 1967; Morgan 1968;
+    Le Pichon 1968). (4) Seismicity and focal mechanisms worldwide matched plate
+    boundary types, with underthrusting at trenches (Isacks, Oliver and Sykes 1968).
+    (5) Deep Sea Drilling Project Leg 3 (1968) found basal sediment ages increasing
+    with distance from the Mid-Atlantic Ridge as predicted. (6) Bullard, Everett and
+    Smith (1965) computer fit of the Atlantic continents at the 500-fathom isobath.
+  data:
+    - Marine magnetic anomaly profiles across ridges
+    - Geomagnetic polarity timescale from dated lavas (1963-1966)
+    - Earthquake focal mechanisms from the WWSSN
+    - Fracture zone azimuths and spreading rates
+    - DSDP basal sediment ages
+    - Continental margin fits
+  time_to_acceptance: >
+    About 55 years from Wegener's 1912 proposal to the plate tectonic consensus
+    (~1967-1970), but only about 5-8 years from Hess's 1960 manuscript. A few
+    prominent geologists (e.g. Jeffreys, Beloussov) never accepted it.
+dead_ends:
+  - who: Land bridges (many palaeontologists, e.g. Schuchert)
+    attempt: Former continental land bridges across oceans, since sunk, to explain shared faunas and floras.
+    why_failed: Conflicted with isostasy, since light continental crust cannot sink into denser ocean floor; no sunken continental crust was found in the ocean basins.
+  - who: Contractionism (Suess and successors)
+    attempt: Mountains and ocean basins produced by contraction of a cooling Earth.
+    why_failed: Radioactive heat production (from ~1903-1906) undermined secular cooling; contraction should give mountain belts in all orientations rather than linear belts; the shortening required in the Alps was too large.
+  - who: Alfred Wegener
+    attempt: Continents ploughing through the sima, driven by Polflucht (pole-fleeing force) and tidal forces; also very high drift rates from longitude measurements in Greenland.
+    why_failed: Jeffreys and others showed the forces were orders of magnitude too weak and the sima too strong; the Greenland longitude drift rates were measurement error. The mechanism was wrong even though the drift was real.
+  - who: Samuel Warren Carey, Bruce Heezen (late 1950s), and others
+    attempt: Expanding Earth, with new crust at ridges but no subduction.
+    why_failed: Required implausible expansion rates; paleomagnetic estimates of past Earth radius showed no large change; subduction at trenches was demonstrated seismically (1968).
+  - who: Self-reversal advocates
+    attempt: Reverse magnetisation explained by mineralogical self-reversal rather than field reversal.
+    why_failed: Self-reversal proved rare; reversals were synchronous worldwide in dated lavas (Cox, Doell and Dalrymple 1963-1966).
+near_misses:
+  - who: Arthur Holmes
+    had: Mantle convection carrying continents apart, with new ocean floor over upcurrents and descent under margins (1928-1931).
+    missed: Had no ocean-floor data to test it, and presented it tentatively; it was not taken up as a research programme. It resembles seafloor spreading strongly, though historians disagree about how closely.
+  - who: Ronald Mason and Arthur Raff
+    had: The striped anomaly map off western North America (1955-1961) with fracture-zone offsets.
+    missed: Did not interpret the stripes as reversals recorded in spreading crust. Their survey did not cross an active ridge axis, so symmetry was not apparent.
+  - who: Lawrence Morley
+    had: The same tape-recorder interpretation as Vine and Matthews, submitted to Nature and then the Journal of Geophysical Research in early 1963.
+    missed: Not a conceptual miss; both journals rejected it as too speculative, and it remained unpublished until later.
+  - who: Bruce Heezen and Marie Tharp
+    had: The continuous ridge and rift valley, the earthquake belt along it, and the physiographic maps.
+    missed: Heezen interpreted the rift as evidence of Earth expansion rather than spreading balanced by subduction.
+  - who: Keith Runcorn, Edward Irving and the paleomagnetists
+    had: Quantitative evidence that continents had moved relative to each other.
+    missed: No account of the ocean floor; the evidence persuaded few outside Britain and Australia because of doubts about the reliability of rock magnetism.
+oracle_candidates:
+  - kind: simulator
+    description: >
+      Vine-Matthews forward model. Given the candidate's spreading rate and the
+      held-out reversal timescale (Cox-Doell-Dalrymple, ~1966), generate a block
+      model of magnetised crust, compute the total-field anomaly at sea level
+      (2D prism formulas), and correlate with observed profiles (Eltanin-19,
+      Reykjanes). Score cross-correlation and symmetry about the axis. Mechanical;
+      requires the hypothesis to be stated as rate plus reversal record.
+    llm_free: true
+    cost: moderate
+  - kind: data_fit
+    description: >
+      Euler-pole fit. From held-out spreading rates and transform-fault azimuths
+      for one plate pair, fit a single rotation pole; require rates to follow
+      sin(theta) and transform azimuths to be small circles within data error
+      (Morgan 1968 style). A fixed-ocean or expanding-Earth hypothesis gives no
+      such constraint.
+    llm_free: true
+    cost: cheap
+  - kind: prediction
+    description: >
+      Transform-fault slip sense. For each mapped ridge offset, the candidate must
+      predict the first-motion sense of earthquakes on the fracture zone and that
+      seismicity is confined between ridge segments. Compare to Sykes (1967)
+      focal mechanisms. Lookup-table scoring.
+    llm_free: true
+    cost: cheap
+  - kind: prediction
+    description: >
+      Seafloor age: predict basal sediment age as a function of distance from the
+      Mid-Atlantic Ridge; score linear fit against DSDP Leg 3 ages (1968). Also
+      predict that no ocean floor older than ~200 Myr exists.
+    llm_free: true
+    cost: cheap
+  - kind: data_fit
+    description: >
+      Continental fit. Rotate South America to Africa (and North America-Europe)
+      using a pole proposed by the candidate and compute misfit at the 500-fathom
+      isobath (Bullard, Everett and Smith 1965). Tests drift reconstructions but
+      not the spreading mechanism; easy to pass from memory.
+    llm_free: true
+    cost: cheap
+  - kind: consistency
+    description: >
+      Global accounting: total area created at ridges must equal area consumed at
+      trenches if Earth radius is constant; check a candidate plate model's
+      boundary rates sum to zero net area change.
+    llm_free: true
+    cost: cheap
+  - kind: llm_judge
+    description: >
+      Rubric check that the verbal hypothesis states creation at ridges,
+      destruction at trenches, passive continents, rigid plates and reversal
+      stripes. Needed to translate prose into the simulator inputs above;
+      flag as LLM-judged.
+    llm_free: false
+    cost: cheap
+contamination:
+  level: total
+  post_cutoff: false
+  notes: >
+    Plate tectonics is textbook material; a model will reproduce the hidden target
+    from the phrase "mid-ocean ridge". The mechanical oracles (forward anomaly model,
+    Euler fits) are still useful because they check that a stated hypothesis is
+    quantitatively right, not only named. For the axiomatizer probe the interesting
+    question is whether it surfaces "the ocean floor is permanent" and "continents
+    must plough through oceanic crust" from a 1960 pack. Obfuscation by renaming
+    is ineffective; a synthetic planet with different plate geometry and reversal
+    history could test the kinematic reasoning.
+sources:
+  - citation: Wegener, A. (1912). "Die Entstehung der Kontinente." Petermanns Geographische Mitteilungen 58.
+    kind: primary
+  - citation: Wegener, A. (1915). Die Entstehung der Kontinente und Ozeane. Braunschweig, Vieweg. (4th ed. 1929.)
+    kind: primary
+  - citation: Holmes, A. (1931). "Radioactivity and Earth movements." Transactions of the Geological Society of Glasgow 18.
+    kind: primary
+  - citation: Jeffreys, H. (1924). The Earth - Its Origin, History and Physical Constitution. Cambridge University Press. (2nd ed. 1929.)
+    kind: primary
+  - citation: Mason, R. G. and Raff, A. D. (1961). "Magnetic survey off the west coast of North America, 32 N latitude to 42 N latitude." Geological Society of America Bulletin 72, 1259-1266.
+    kind: primary
+  - citation: Hess, H. H. (1962). "History of ocean basins." In Engel, A. E. J., James, H. L. and Leonard, B. F. (eds.), Petrologic Studies - A Volume in Honor of A. F. Buddington. Geological Society of America.
+    kind: primary
+  - citation: Dietz, R. S. (1961). "Continent and ocean basin evolution by spreading of the sea floor." Nature 190, 854-857.
+    kind: primary
+  - citation: Vine, F. J. and Matthews, D. H. (1963). "Magnetic anomalies over oceanic ridges." Nature 199, 947-949.
+    kind: primary
+  - citation: Wilson, J. T. (1965). "A new class of faults and their bearing on continental drift." Nature 207.
+    kind: primary
+  - citation: Bullard, E., Everett, J. E. and Smith, A. G. (1965). "The fit of the continents around the Atlantic." Philosophical Transactions of the Royal Society A 258.
+    kind: primary
+  - citation: Vine, F. J. (1966). "Spreading of the ocean floor - new evidence." Science 154.
+    kind: primary
+  - citation: Pitman, W. C. and Heirtzler, J. R. (1966). "Magnetic anomalies over the Pacific-Antarctic Ridge." Science 154.
+    kind: primary
+  - citation: Sykes, L. R. (1967). "Mechanism of earthquakes and nature of faulting on the mid-oceanic ridges." Journal of Geophysical Research 72.
+    kind: primary
+  - citation: McKenzie, D. P. and Parker, R. L. (1967). "The North Pacific - an example of tectonics on a sphere." Nature 216.
+    kind: primary
+  - citation: Morgan, W. J. (1968). "Rises, trenches, great faults, and crustal blocks." Journal of Geophysical Research 73.
+    kind: primary
+  - citation: Le Pichon, X. (1968). "Sea-floor spreading and continental drift." Journal of Geophysical Research 73.
+    kind: primary
+  - citation: Isacks, B., Oliver, J. and Sykes, L. R. (1968). "Seismology and the new global tectonics." Journal of Geophysical Research 73.
+    kind: primary
+  - citation: Oreskes, N. (1999). The Rejection of Continental Drift - Theory and Method in American Earth Science. Oxford University Press.
+    kind: secondary
+  - citation: Frankel, H. R. (2012). The Continental Drift Controversy. 4 vols. Cambridge University Press.
+    kind: secondary
+  - citation: Oreskes, N. (ed.) (2001). Plate Tectonics - An Insider's History of the Modern Theory of the Earth. Westview Press.
+    kind: secondary
+  - citation: Le Grand, H. E. (1988). Drifting Continents and Shifting Theories. Cambridge University Press.
+    kind: secondary
+open_issues:
+  - >
+    Snapshot date justification. 1912 would make the target "continental drift",
+    for which the decisive evidence did not yet exist and Wegener's own mechanism
+    was wrong; a solver would be judged against a target its pack cannot support.
+    1960-06-30 is chosen because the key anomalies (global ridge and rift, thin
+    sediment, ridge heat flow, Mason's 1958 stripes and fracture-zone offsets,
+    divergent polar wander paths, Wadati-Benioff zones) were published, while
+    Dietz (Nature, June 1961) and Hess (1962) were not. Hess's manuscript was
+    circulated informally, dated 1959 by USGS and 1960 by other accounts (an ONR
+    report); confirm against Frankel vol. 3. If it circulated in 1959, the pack is
+    still defined by published literature, but note the leak risk. The reversal
+    timescale (1963-1966) is held out for the oracle, so a solver must predict
+    reversal stripes from the possibility of reversal, not from the timescale.
+  - date_of_result is set to Vine and Matthews (Nature, 7 September 1963) as the first testable statement of the target; arguably it should be Hess (1962) or Morgan (1968). Confirm the 7 September issue date.
+  - Volume numbers for Holmes (1931, vol. 18) and Wegener (1912, vol. 58) are from memory; page numbers omitted for most papers deliberately.
+  - Heat-flow claim (ocean roughly equals continent; high at ridges) and its pre-1960 status need checking against Bullard, Maxwell and Revelle (1956) and Von Herzen (1959).
+  - The "no ocean floor older than Cretaceous" claim for 1960 needs a source.
+  - Nagata's Haruna dacite self-reversal date (1951-1952) from memory.
+  - Carey's Hobart symposium (1956) was published in 1958; confirm.
+  - Whether Holmes counts as a near miss for seafloor spreading is contested (Frankel discusses the differences); confidence likely.

@@ -1,0 +1,294 @@
+id: natural_selection
+title: Evolution by natural selection (Darwin and Wallace)
+scale: major
+field: biology
+date_of_result: "1858-07-01"
+snapshot_date: "1837-06-30"
+discoverers: [Charles Darwin, Alfred Russel Wallace]
+summary: >
+  Darwin (privately, from 1838) and Wallace (independently, in February 1858)
+  concluded that species are not fixed: populations vary, more offspring are born
+  than can survive, and heritable variants that improve survival or reproduction
+  become more common over generations, so that lineages change and split. Their
+  papers were read together at the Linnean Society of London on 1 July 1858 and
+  printed in August 1858; Darwin's On the Origin of Species followed on 24 November
+  1859. Common descent was accepted by most naturalists within about fifteen years,
+  but selection as the main mechanism was widely doubted until the synthesis of
+  selection with Mendelian genetics in the 1920s-1940s, because there was no
+  working theory of inheritance and physicists' estimates of the Earth's age seemed
+  too short. The case is chosen mainly to test whether an axiomatizer can surface
+  the implicit assumption that species are fixed types, and as a case where
+  mechanical oracles are weak.
+hidden_target:
+  statement: >
+    Species are not fixed. Individuals within a population vary, and some of that
+    variation is inherited. Populations produce more offspring than can survive and
+    reproduce (Malthusian excess). Variants that do better in the struggle for
+    existence leave more descendants, so their traits accumulate over many
+    generations. Acting over very long (geological) time, and combined with
+    geographic separation and divergence of character, this process produces new
+    varieties, then new species, and explains adaptation, the nested hierarchy of
+    classification, and the distribution of related species in space (common
+    descent with modification).
+  formal: >
+    Not an equation. A minimal formal core: if (1) heritable variation in fitness
+    exists, (2) reproduction exceeds replacement under finite resources, then the
+    population mean of a heritable trait changes in the direction of higher fitness
+    each generation (later formalised as Fisher's fundamental theorem and the
+    Price equation, delta z_bar = Cov(w, z) / w_bar under perfect transmission).
+    The Price-equation form is anachronistic and must not appear in the knowledge pack.
+knowledge_state_before:
+  - claim: The Earth is very old and its surface has been shaped by slow, continuing processes of the kind observable now (uniformitarianism / actualism), giving effectively unlimited time.
+    date: "1830-1833"
+    source: Lyell, Principles of Geology, 3 vols (1830-1833)
+    confidence: established
+  - claim: Lyell himself (in Principles, vol. 2) rejected transmutation, gave an extended critique of Lamarck, and held that species are created to fit conditions and go extinct as conditions change, one at a time.
+    date: "1832"
+    source: Lyell, Principles of Geology, vol. 2 (1832)
+    confidence: established
+  - claim: Populations tend to grow geometrically while food supply grows at best arithmetically, so growth is checked by mortality and limited reproduction ("struggle for existence" in human populations).
+    date: "1798"
+    source: Malthus, An Essay on the Principle of Population (1798; 6th ed. 1826)
+    confidence: established
+  - claim: Breeders of domesticated animals and plants (pigeons, cattle, sheep, dogs, cereals) produce large heritable changes by choosing which individuals breed. Variation within breeds is common and much of it is inherited.
+    confidence: established
+  - claim: The fossil record shows a succession of distinct faunas and floras, with many extinct forms; older strata contain forms less like living ones; extinct forms in a region often resemble living forms of the same region (e.g. South American fossil mammals related to living South American groups).
+    source: Cuvier (extinction, 1796-1812); Darwin's Beagle observations of fossil edentates in Argentina (1832-1833)
+    confidence: established
+  - claim: Organisms can be classified in a nested hierarchy of groups within groups (Linnaean system); comparative anatomy recognises shared ground plans (homologies) across very different animals, e.g. the vertebrate limb.
+    source: Linnaeus, Systema Naturae (10th ed. 1758); Cuvier; Geoffroy Saint-Hilaire; Owen (homology, 1840s)
+    confidence: established
+  - claim: Embryos of different vertebrates resemble each other more closely than the adults do.
+    source: von Baer (1828)
+    confidence: established
+  - claim: Island faunas contain many species found nowhere else, yet those species resemble species of the nearest mainland rather than species of islands with similar climates elsewhere. Darwin collected mockingbirds on several Galapagos islands (September-October 1835) that differed from island to island; John Gould, examining the birds in early 1837, classified them as distinct species and identified a group of ground birds as an unusual group of finches.
+    date: "1835-1837"
+    source: Darwin, Journal of Researches (1839); Darwin's Ornithological Notes; Sulloway (1982)
+    confidence: established
+  - claim: Transmutation of species had been proposed (Lamarck 1809; Erasmus Darwin, Zoonomia 1794-1796) but was rejected by most British naturalists, partly on scientific grounds and partly for its association with materialism and radical politics.
+    confidence: established
+  - claim: Natural theology (Paley 1802) explained adaptation as evidence of design; adaptation was the central explanandum of British natural history.
+    source: Paley, Natural Theology (1802)
+    confidence: established
+anomalies:
+  - claim: Species on neighbouring islands of one archipelago (Galapagos mockingbirds and tortoises) differ slightly from island to island, while all resemble South American forms. Separate creation does not explain why the creator would make slightly different species for nearly identical islands, or why they would resemble the mainland.
+    confidence: established
+  - claim: The boundary between "variety" and "species" is arbitrary in practice; competent naturalists disagree on whether forms are species or varieties.
+    confidence: established
+  - claim: Rudimentary (vestigial) organs, such as the wings of flightless birds or teeth in foetal baleen whales, serve no evident purpose and are awkward for design-based explanation.
+    confidence: established
+  - claim: Successive faunas in one region resemble one another (law of succession of types), which is unexplained if each extinction is followed by independent creation.
+    confidence: likely
+    source: Darwin noted this for South American fossil mammals; Owen's descriptions of the Beagle fossils (1838-1840)
+  - claim: Organisms on oceanic islands are drawn disproportionately from groups that can disperse over sea (birds, insects, plants with light seeds) and lack land mammals and amphibians, though these do well when introduced.
+    confidence: likely
+    source: This pattern was stated sharply only in the Origin (1859, ch. 12); its status before 1837 is uncertain.
+assumptions_explicit:
+  - claim: Each species was created separately (by divine action or by an unknown natural law) and is adapted to its conditions.
+    confidence: established
+  - claim: Variation within a species is limited; domestic breeds revert to the wild type when left to themselves.
+    confidence: likely
+  - claim: The struggle for existence and selective breeding act to keep species true to type (eliminating deviants), not to change them.
+    source: e.g. Blyth (1835, 1837)
+    confidence: likely
+assumptions_implicit:
+  - claim: Species are fixed natural kinds defined by an essential type; individual variation is noise around the type rather than the raw material of change (typological or essentialist thinking, in Mayr's later terms).
+    dropped_by_discovery: true
+    source: Mayr (1959; 1982) framed this as typological versus population thinking. Historians (e.g. Amundson, Winsor) have argued the "essentialism story" is an oversimplification of pre-Darwinian taxonomy.
+    confidence: likely
+  - claim: Adaptation requires a designer or a directed internal drive; an undirected process cannot produce fitted structures.
+    dropped_by_discovery: true
+    confidence: established
+  - claim: The Malthusian struggle is a fact about human populations and social policy, not a general force in nature that could have creative consequences.
+    dropped_by_discovery: true
+    confidence: likely
+  - claim: The changes produced by breeders are a separate, artificial phenomenon with no analogue in nature.
+    dropped_by_discovery: true
+    confidence: likely
+  - claim: Offspring characters are a blend of parental characters (blending inheritance).
+    dropped_by_discovery: false
+    source: Darwin and Wallace retained it; it became a serious objection (Jenkin 1867) and was resolved only after 1900 by Mendelian particulate inheritance.
+    confidence: established
+  - claim: The history of life is a scale or progression toward higher forms.
+    dropped_by_discovery: false
+    source: Darwin explicitly rejected a necessary progression; Wallace and many Victorian readers retained progressive language. Partial drop.
+    confidence: uncertain
+the_move:
+  types: [drop_shared_assumption, analogy_transfer, unify_conflicting_theories, change_the_question]
+  description: >
+    The decisive step was to treat variation among individuals as the subject
+    matter rather than as deviation from a type, and to combine three accepted
+    but separately housed ideas: Malthus's excess of births over survivors, the
+    breeders' demonstration that selection of heritable variants changes a lineage,
+    and Lyell's deep time. Darwin recorded the Malthus connection in Notebook D on
+    28 September 1838; Wallace reached the same combination in February 1858 while
+    ill with fever in the Moluccas, also recalling Malthus. The analogy from
+    artificial to natural selection supplied the mechanism; deep time supplied the
+    duration; biogeography and classification supplied the explananda. The question
+    shifted from "how was each species created to fit its place?" to "how do
+    populations change, and why do related forms cluster in space and in the
+    taxonomic hierarchy?"
+verification:
+  how: >
+    Not verified by a single test. Darwin's Origin (1859) argued from consilience:
+    biogeography, classification, morphology, embryology, rudimentary organs and the
+    fossil record all fit descent with modification better than separate creation.
+    Later support: transitional fossils (Archaeopteryx, 1861; Marsh's horse series,
+    1870s); Bates's account of mimicry in Amazonian butterflies (1862) as selection
+    in action; Weldon's crab measurements (1890s); population genetics (Fisher 1930,
+    Haldane 1924-1932, Wright 1931) removed the inheritance objection; field and
+    laboratory measurements of selection in the 20th century (industrial melanism,
+    Grants' Galapagos finch studies from 1973). Radiometric dating (from ~1905)
+    removed the age-of-Earth objection.
+  data:
+    - Distribution of species on islands versus nearest mainland
+    - Nested hierarchical classification
+    - Homologies and rudimentary organs
+    - Fossil succession and transitional forms
+    - Records of change under domestication
+  time_to_acceptance: >
+    Two-stage. Common descent was accepted by most British and American
+    naturalists by the early-to-mid 1870s. Selection as the principal mechanism
+    was widely doubted during the "eclipse of Darwinism" (~1880-1920, Bowler's term)
+    and accepted only with the Modern Synthesis, roughly 1930-1950. So about 15
+    years for descent and 70-90 years for the mechanism.
+dead_ends:
+  - who: Jean-Baptiste Lamarck
+    attempt: Transformism driven by an internal tendency toward complexity plus inheritance of characters acquired by use and disuse (Philosophie zoologique, 1809). Lineages arose by repeated spontaneous generation and climbed a scale.
+    why_failed: No evidence for the complexifying force or for spontaneous generation of lineages; inheritance of acquired characters was never demonstrated (Weismann's germ-plasm arguments, 1880s, undercut it). Lamarck had no account of branching or of why adaptation tracks local conditions. Darwin himself accepted some use-inheritance, so this is a partially shared error rather than a clean dead end.
+  - who: Robert Chambers (anonymous)
+    attempt: Vestiges of the Natural History of Creation (1844), a popular argument that life developed progressively under divinely ordained natural law, by analogy with embryological development, with jumps between forms.
+    why_failed: No mechanism beyond an unexplained developmental law; many factual errors (e.g. reliance on claims of spontaneous generation of insects in electrical experiments) that specialists such as Adam Sedgwick attacked. It made transmutation more discussed but less scientifically respectable, which made Darwin more cautious.
+  - who: Special creation / natural theology (Paley, Bridgewater Treatises 1833-1840)
+    attempt: Each species designed and created for its conditions.
+    why_failed: Did not explain biogeographic patterns, rudimentary organs, nested hierarchy, or resemblance of island forms to mainland forms, except by appeal to the creator's unknown plan.
+  - who: Richard Owen
+    attempt: Archetypes and an unspecified "continuous operation of ordained becoming" (1849 onward); later a vague non-selectionist derivative theory.
+    why_failed: Gave a framework for homology without a mechanism or testable predictions.
+    # confidence: likely; Owen's views shifted and are disputed by historians
+near_misses:
+  - who: Patrick Matthew
+    had: In an appendix to On Naval Timber and Arboriculture (1831) he described a natural process by which better-adapted individuals survive and propagate, and suggested it could change species after catastrophes.
+    missed: Did not develop it, relate it to biogeography or classification, or gather evidence; it was buried in a book on forestry. He claimed priority in the Gardeners' Chronicle in 1860, and Darwin acknowledged him in later editions of the Origin.
+  - who: Edward Blyth
+    had: In articles in the Magazine of Natural History (1835, 1837) he described variation, struggle and selection in nature, and the parallel with breeders.
+    missed: Treated selection as conservative, keeping species true to type by removing deviants, rather than as a source of new species. Eiseley (1959) argued Darwin drew on Blyth; most historians reject the strong version of that claim.
+  - who: William Charles Wells
+    had: A paper read to the Royal Society in 1813 (published 1818) proposing that human skin colour varieties arose by survival of individuals better able to resist local diseases.
+    missed: Applied only to human races; no generalisation to species formation. Darwin acknowledged Wells in the historical sketch added to later editions of the Origin.
+  - who: Charles Lyell
+    had: Deep time, the struggle among species, extinction, the importance of geographic distribution, and a detailed knowledge of Lamarck.
+    missed: Retained fixed species on principle; accepted descent only partially and late (Antiquity of Man, 1863; fuller in Principles 10th ed., 1867-1868).
+  - who: Alfred Russel Wallace (1855)
+    had: The "Sarawak law" paper (1855) stated that every species has come into existence coincident in space and time with a pre-existing closely allied species.
+    missed: A mechanism. He supplied it in the Ternate essay of February 1858.
+oracle_candidates:
+  - kind: simulator
+    description: >
+      Implement the candidate mechanism as an individual-based simulation
+      (heritable trait, variation, finite carrying capacity, fitness depending on
+      trait and environment). Check mechanically that (a) mean trait moves toward
+      the fitness optimum, (b) two isolated subpopulations in different
+      environments diverge, (c) removing heritability or removing excess
+      reproduction stops adaptation. This tests that the proposed mechanism works
+      as claimed; it does not test historical correctness, and translating a verbal
+      hypothesis into a simulator needs either a structured output format or a
+      human or LLM translator.
+    llm_free: true
+    cost: moderate
+  - kind: consistency
+    description: >
+      Phylogeny-from-data check: give the solver a character matrix of extant taxa
+      (from the knowledge pack) and require a tree; score with a parsimony or
+      likelihood program whether a branching tree explains the matrix better than
+      independent origins (e.g. compare tree length against shuffled matrices).
+      Mechanical, but it tests common descent, not selection.
+    llm_free: true
+    cost: cheap
+  - kind: prediction
+    description: >
+      Held-out biogeography: give species lists for islands not in the pack and
+      require the hypothesis to predict which mainland fauna each island's
+      endemics most resemble (nearest source by dispersal distance). Scorable
+      against a lookup table. Weak: separate creation with an ad hoc rule could
+      also pass, and modern parsimony makes the answer easy.
+    llm_free: true
+    cost: cheap
+  - kind: prediction
+    description: >
+      Predict the existence of intermediate fossil forms between major groups
+      (e.g. between reptiles and birds) before Archaeopteryx (1861); check against
+      the held-out fossil record. Scoring whether a verbal prediction counts is
+      judgement-dependent.
+    llm_free: false
+    cost: cheap
+  - kind: llm_judge
+    description: >
+      Rubric-scored comparison of the solver's stated hypothesis against the
+      hidden target: must include heritable variation, overproduction/struggle,
+      differential survival and reproduction, accumulation over long time, and
+      divergence into new species; must reject fixity of species. This is the
+      main oracle for this case and is LLM- or human-judged; the rubric is
+      vulnerable to the judge recognising the famous answer.
+    llm_free: false
+    cost: cheap
+contamination:
+  level: total
+  post_cutoff: false
+  notes: >
+    Natural selection is among the most widely known scientific ideas; any
+    frontier model will name it from almost any hint (Galapagos, Malthus, pigeons).
+    The case is useful for the axiomatizer probe (can it surface "species are fixed
+    types" as an implicit assumption from a pre-1838 pack written in period
+    vocabulary?) rather than for rediscovery. Obfuscation is hard because the
+    explananda (islands, breeders, fossils) are themselves signatures. A synthetic
+    variant (invented organisms with digital inheritance in an artificial-life
+    world) may be the only way to measure rediscovery.
+sources:
+  - citation: Darwin, C. and Wallace, A. R. (1858). "On the tendency of species to form varieties; and on the perpetuation of varieties and species by natural means of selection." Journal of the Proceedings of the Linnean Society of London, Zoology 3.
+    kind: primary
+  - citation: Darwin, C. (1859). On the Origin of Species by Means of Natural Selection. London, John Murray.
+    kind: primary
+  - citation: Wallace, A. R. (1855). "On the law which has regulated the introduction of new species." Annals and Magazine of Natural History.
+    kind: primary
+  - citation: Darwin, C. Transmutation Notebooks B-E (1837-1839), published in Barrett, P. H. et al. (eds.) (1987). Charles Darwin's Notebooks, 1836-1844. Cambridge University Press.
+    url: https://darwin-online.org.uk/
+    kind: primary
+  - citation: Malthus, T. R. (1798). An Essay on the Principle of Population.
+    kind: primary
+  - citation: Lyell, C. (1830-1833). Principles of Geology. 3 vols. London, John Murray.
+    kind: primary
+  - citation: Lamarck, J.-B. (1809). Philosophie zoologique.
+    kind: primary
+  - citation: "[Chambers, R.] (1844). Vestiges of the Natural History of Creation. London, John Churchill."
+    kind: primary
+  - citation: Matthew, P. (1831). On Naval Timber and Arboriculture. Edinburgh.
+    kind: primary
+  - citation: "[Jenkin, F.] (1867). Review of The Origin of Species. North British Review 46."
+    kind: primary
+  - citation: Thomson, W. (1862, printed 1864). "On the secular cooling of the earth." Transactions of the Royal Society of Edinburgh 23.
+    kind: primary
+  - citation: Bowler, P. J. (1984; 3rd ed. 2003). Evolution - The History of an Idea. University of California Press.
+    kind: secondary
+  - citation: Bowler, P. J. (1983). The Eclipse of Darwinism. Johns Hopkins University Press.
+    kind: secondary
+  - citation: Mayr, E. (1982). The Growth of Biological Thought. Harvard University Press.
+    kind: secondary
+  - citation: 'Sulloway, F. J. (1982). "Darwin and his finches: the evolution of a legend." Journal of the History of Biology 15.'
+    kind: secondary
+  - citation: Eiseley, L. (1959). "Charles Darwin, Edward Blyth, and the theory of natural selection." Proceedings of the American Philosophical Society 103.
+    kind: secondary
+  - citation: Burchfield, J. D. (1975). Lord Kelvin and the Age of the Earth. Science History Publications.
+    kind: secondary
+open_issues:
+  - >
+    Snapshot choice. 1837-06-30 is just before Darwin opened Notebook B (July 1837),
+    after Gould's identifications of the Beagle birds. Alternative: 1858-01-31 (just
+    before Wallace's Ternate essay), which would include Vestiges, Wallace 1855 and
+    Darwin's unpublished material is excluded either way. The later snapshot is
+    richer but leaks more (Wallace 1855 is close to the target). Decide per experiment.
+  - Two later objections are not in the pack but matter for evaluation. (1) Inheritance gap - Fleeming Jenkin's anonymous review (North British Review, June 1867) argued that a rare favourable variant would be swamped by crossing under blending inheritance; Darwin called it among the most troubling objections and shifted emphasis to many small individual differences. Revisionist work (Morris 1994, BJHS; a later arXiv paper) disputes how far Jenkin's text is really about blending. (2) Kelvin's thermal age of the Earth (1862; roughly 20-400 Myr, later narrowed to ~20-40 Myr) attacked Darwin's ~300 Myr estimate for the denudation of the Weald (Origin, 1st ed.), which Darwin removed in the 3rd edition (1861). Confirm the edition in which the Weald estimate was dropped.
+  - The exact page and volume details for Wallace (1855) and Blyth (1835, 1837) have not been checked; volume numbers omitted deliberately.
+  - Mayr's 1959 essay where "population thinking" vs "typological thinking" is introduced (in Meggers (ed.), Evolution and Anthropology - A Centennial Appraisal) is cited from memory; verify before adding as a source.
+  - The claim that the island-dispersal pattern was recognised before 1837 is uncertain; it may need to move out of anomalies for an 1837 snapshot.
+  - The "essentialism story" itself is contested by historians (Amundson 2005; Winsor 2006); the implicit assumption is phrased in Mayr's terms because that is the framing the project wants to test, but the historical fit is "likely", not "established".

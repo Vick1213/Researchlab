@@ -49,6 +49,13 @@ def build(v: Variant) -> str:
     return "\n".join(parts)
 
 
+def build_request(v: Variant, **options) -> "GenerationRequest":
+    """Single-turn request for a task variant, tagged so offline backends can route it."""
+    from engine.models import GenerationRequest, Message
+    return GenerationRequest(messages=[Message("user", build(v))], options=options,
+                             tags={"task": v.task_id, "variant": v.name})
+
+
 _JSON_BLOCK = re.compile(r"```json\s*(\{.*?\})\s*```", re.DOTALL)
 
 

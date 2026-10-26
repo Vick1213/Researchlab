@@ -1,17 +1,11 @@
 # eval
 
-`runs/` holds one JSON record per model run: task, variant, condition, model (requested
-and served), prompt hash, the full reply, the extracted candidate, and the oracle result.
+`python -m engine run <experiment.yaml>` writes `runs/<name>/<timestamp>/`:
 
-Conditions so far:
-- `baseline`: one plain model call on the knowledge pack, no scaffolding
-  (`python -m engine.baseline <task> <variant>`).
+- `manifest.json`: config, git commit and dirty flag, package versions, backend
+  descriptions, the prompt hash per task variant, start and finish times.
+- `records.jsonl`: one line per attempt with every model call (request and
+  generation), the final reply, the parsed candidate, the oracle verdict and the reward.
+- `summary.json`: pass rate, mean reward and error count per (backend, task, variant).
 
-Planned: add pipeline roles (axiomatizer, anomaly collector, hypothesis population,
-thought-experiment engine) one at a time and record the delta against baseline on
-the same tasks.
-
-Runs tagged `subagent-proxy` were produced by a Claude Code subagent restricted to
-reading the prompt and answering without tools, because the session that produced
-them had no API key. They are not API runs: model settings (effort, system prompt)
-differ, so treat them as indicative only and re-run with the API.
+Commit run directories you want to keep as results; `smoke_replay/` is ignored.

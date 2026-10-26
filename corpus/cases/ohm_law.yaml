@@ -1,0 +1,280 @@
+id: ohm_law
+title: Ohm's law for the galvanic circuit
+scale: major
+field: physics (electricity)
+date_of_result: "1827"
+snapshot_date: "1825-12-31"
+discoverers: [Georg Simon Ohm]
+summary: >
+  Georg Simon Ohm, a mathematics and physics teacher at the Jesuit Gymnasium in
+  Cologne, measured how the magnetic effect of a current (deflection of a needle on
+  a torsion balance) depended on the length of wire closing the circuit. His first
+  attempt (1825), with a voltaic pile whose output drifted, gave a logarithmic law
+  that he soon withdrew. In 1826, on Poggendorff's suggestion, he replaced the pile
+  with a bismuth-copper thermocouple held between boiling water and ice, obtained a
+  steady source, and found that the deflection X for a wire of length x fits
+  X = a/(b + x), where a depends on the source and b on the rest of the circuit.
+  In Die galvanische Kette, mathematisch bearbeitet (Berlin, 1827) he built a
+  mathematical theory on an analogy with Fourier's heat conduction: current is
+  proportional to the difference of "electroscopic force" (tension) and inversely to
+  the total reduced length (resistance) of the circuit, source included. The book
+  was poorly received in Germany, partly because of its mathematical style and
+  partly through a hostile review by Georg Friedrich Pohl; Ohm left his Cologne post.
+  Recognition came in the 1830s-1840s (Fechner, Pouillet, Wheatstone, Lenz), and the
+  Royal Society awarded him the Copley Medal in 1841.
+hidden_target:
+  statement: >
+    In a closed galvanic circuit the current is equal to the driving electromotive
+    force (tension) divided by the total resistance of the circuit, which is the sum
+    of the resistance of the source and the external conductor; a uniform wire's
+    resistance is proportional to its length and inversely proportional to its
+    cross-section and conductivity.
+  formal: "I = E / (r + R)"
+knowledge_state_before:
+  - claim: >
+      A current deflects a magnetic needle (Ørsted 1820); Schweigger's multiplier
+      coil (1820) amplified the effect, making the needle deflection a usable measure
+      of current strength.
+    date: "1820"
+    confidence: established
+  - claim: >
+      Coulomb's torsion balance (1785) allowed small forces to be measured by the
+      twist needed to restore a needle; Ohm adapted it as a current meter.
+    date: "1785"
+    confidence: established
+  - claim: >
+      Seebeck discovered that a circuit of two different metals with junctions at
+      different temperatures produces a current (thermoelectricity).
+    date: "1821-1822"
+    source: Seebeck, Abhandlungen der Königlichen Akademie der Wissenschaften zu Berlin (1822-1823)
+    confidence: established
+  - claim: >
+      Davy found that the conducting power of a wire increases with cross-section and
+      decreases with length.
+    date: "1821"
+    source: Davy, Philosophical Transactions (1821)
+    confidence: likely
+  - claim: >
+      Fourier's analytical theory of heat: heat flux proportional to temperature
+      gradient, with conductivity as a material constant.
+    date: "1822"
+    source: Fourier, Théorie analytique de la chaleur (1822)
+    confidence: established
+  - claim: >
+      Ohm's own 1825 result with a voltaic pile: the loss of force with wire length x
+      fit v = 0.41 log(1 + x), a logarithmic law. He later withdrew it; the pile's
+      output was drifting during the measurements (polarization).
+    date: "1825"
+    source: Ohm, "Vorläufige Anzeige des Gesetzes, nach welchem Metalle die Contaktelektricität leiten", Journal für Chemie und Physik 44 (1825)
+    confidence: likely
+  - claim: >
+      Ohm's 1826 thermocouple data (first series, as usually reproduced) for eight
+      copper wires of the same thickness, length x in inches against torsion-balance
+      reading X - 2, 326 3/4; 4, 300 3/4; 6, 277 3/4; 10, 238 1/4; 18, 190 3/4;
+      34, 134 1/2; 66, 83 1/4; 130, 48 1/2. Ohm fitted X = a/(b + x) with
+      a = 7285 and b = 20 1/4. (A least-squares fit of 1/X on x gives a about 7269,
+      b about 20.3, max error about 1%.)
+    date: "1826"
+    source: >
+      Ohm, "Bestimmung des Gesetzes, nach welchem Metalle die Contaktelektricität
+      leiten, nebst einem Entwurfe zu einer Theorie des Voltaischen Apparates und des
+      Schweiggerschen Multiplicators", Journal für Chemie und Physik 46 (1826) 137-166
+    confidence: uncertain
+anomalies:
+  - claim: >
+      Published measurements of how the strength of the current depends on wire
+      length disagreed: different investigators (Barlow, Becquerel, Ohm in 1825)
+      reported different functional forms, because sources drifted and the role of
+      the battery's own internal resistance was not separated out.
+    confidence: likely
+  - claim: >
+      There was no agreed distinction between "tension" (what an electrometer reads)
+      and "quantity" or "strength" of current (what a galvanometer reads), so it was
+      unclear what quantity a law should connect.
+    confidence: likely
+assumptions_explicit:
+  - claim: >
+      Volta's contact theory: the electromotive force of a pile arises at the contact
+      of dissimilar metals. Ohm worked within it ("Contaktelektricität").
+    confidence: established
+  - claim: The deflection of the needle measures the strength of the current.
+    confidence: established
+assumptions_implicit:
+  - claim: >
+      The source can be treated separately from the external wire, as a fixed
+      supply of electricity; the law should relate the effect to the external
+      conductor only. Ohm's constant b - the resistance of the source and leads - put
+      the source inside the circuit as one more resistance.
+    dropped_by_discovery: true
+    confidence: likely
+  - claim: >
+      Galvanic phenomena belong to experimental and chemical physics and are not
+      suited to mathematical treatment on the model of mechanics or heat. Ohm's
+      Fourier-style theory broke with this, and the hostile reception in Germany
+      partly reflected it.
+    dropped_by_discovery: true
+    confidence: likely
+  - claim: >
+      A voltaic pile is a steady source over the duration of an experiment. This
+      was false (polarization) and caused Ohm's 1825 logarithmic law; he dropped it
+      by changing to a thermocouple.
+    dropped_by_discovery: true
+    confidence: established
+  - claim: >
+      Electricity in a circuit behaves like electricity in electrostatics, with
+      tension spreading through the conductor; Ohm in fact assumed a static
+      distribution of electroscopic force along the wire with a constant gradient,
+      which was later reinterpreted (Kirchhoff, 1849) in terms of electrostatic
+      potential.
+    dropped_by_discovery: false
+    confidence: uncertain
+the_move:
+  types: [new_instrument_or_data, empirical_pattern_fit, analogy_transfer]
+  description: >
+    Three steps. (1) A better instrument: replacing the drifting pile with a
+    thermocouple gave a stable source, and the torsion balance a reproducible
+    reading. (2) An empirical fit: the deflection versus wire length data follow a
+    hyperbola X = a/(b + x), not a logarithm; the additive constant b is the key,
+    since it says the source contributes its own resistance. (3) An analogy: Ohm
+    mapped Fourier's heat conduction onto the circuit (heat flow to current,
+    temperature to electroscopic force, thermal conductivity to electrical
+    conductivity) and derived the law for a whole circuit of several conductors in
+    series, with the dependence on length, cross-section and material.
+verification:
+  how: >
+    Fechner verified the law with extensive measurements (1831). Pouillet in France
+    found the same law independently (1831, 1837) with thermocouples and
+    galvanometers. Lenz and Jacobi in Russia, and Wheatstone in England (Bakerian
+    lecture, 1843), used and promoted it. The Royal Society awarded Ohm the Copley
+    Medal in 1841. Kirchhoff (1849) connected Ohm's electroscopic force to
+    electrostatic potential.
+  data:
+    - Ohm 1826 eight-wire thermocouple series
+    - Fechner 1831 measurements (Massbestimmungen über die galvanische Kette)
+    - Pouillet 1837 measurements
+  time_to_acceptance: >
+    About 10-15 years. Largely ignored or criticized in Germany 1827-1831; accepted
+    among experimental physicists in the 1830s; formal recognition in 1841.
+dead_ends:
+  - who: Georg Simon Ohm
+    attempt: Logarithmic law of the loss of force with wire length, from voltaic-pile measurements (1825).
+    why_failed: The pile's output declined during the measurements, so the data mixed the length effect with source drift.
+  - who: Peter Barlow
+    attempt: Measured the magnetic effect as a function of wire length (1825) and reported a non-reciprocal dependence.
+    why_failed: >
+      Source variation and not including the battery's resistance; the functional
+      form he gave did not generalize. (Details uncertain; see open_issues.)
+  - who: Georg Friedrich Pohl (as critic)
+    attempt: >
+      Reviewed Die galvanische Kette at length in the Jahrbücher für wissenschaftliche
+      Kritik (1828) and rejected its approach, preferring a speculative account of
+      galvanism over mathematical derivation.
+    why_failed: Gave no quantitative alternative; later measurements by Fechner and Pouillet supported Ohm.
+near_misses:
+  - who: Humphry Davy
+    had: Qualitative dependence of conducting power on length and cross-section (1821).
+    missed: No treatment of the whole circuit including the source and no relation to the driving tension.
+  - who: Henry Cavendish
+    had: >
+      Unpublished experiments (about 1781) comparing the conduction of saline
+      solutions using his own body as a detector, from which he concluded
+      approximately that the "velocity" of electricity is proportional to the force.
+    missed: Never published; the notes were edited by Maxwell in 1879, long after Ohm.
+oracle_candidates:
+  - kind: data_fit
+    description: >
+      Use Ohm's 1826 eight-point series (x = 2, 4, 6, 10, 18, 34, 66, 130 inches;
+      X = 326.75, 300.75, 277.75, 238.25, 190.75, 134.5, 83.25, 48.5). Fit the
+      candidate with at most two parameters. Pass if max relative error is under 2%;
+      X = a/(b + x) gives about 1%. A logarithmic form a - c*log(1 + x) and a pure
+      reciprocal a/x should both be checked and expected to fail at this threshold.
+    llm_free: true
+    cost: cheap
+  - kind: prediction
+    description: >
+      Fit a and b on the copper series; then the candidate must predict deflections
+      for (a) wires of a different cross-section (resistance scales as length over
+      area) and (b) a different source temperature difference (only a changes, b fixed).
+      Requires synthetic or later historical data (e.g. Fechner 1831); pass if
+      relative error under 3%.
+    llm_free: true
+    cost: moderate
+  - kind: simulator
+    description: >
+      Circuit simulator with a hidden source EMF and internal resistance and
+      switchable external conductors of chosen length, area and material, plus
+      optional source drift. The solver chooses measurements and must report a law
+      that predicts held-out circuits (including series combinations) within 2%.
+      Turning drift on reproduces Ohm's 1825 trap.
+    llm_free: true
+    cost: moderate
+  - kind: consistency
+    description: >
+      For series combinations of conductors, the candidate must give resistances
+      that add, and the current must be the same at every point of a single loop.
+    llm_free: true
+    cost: cheap
+contamination:
+  level: total
+  post_cutoff: false
+  notes: >
+    V = IR is known to every model. Ohm's eight-point series is less widely known
+    but the hyperbolic form with an internal-resistance term is a standard textbook
+    point. To measure anything, use the simulator with renamed quantities and
+    unfamiliar units, a source with nonzero internal resistance that must be
+    inferred, and optionally a nonlinear element (e.g. current proportional to a
+    power of the driving force, or a temperature-dependent resistance) so that
+    reciting Ohm's law fails. A drifting-source variant tests whether the solver
+    notices non-stationarity as Ohm eventually did.
+sources:
+  - citation: >
+      Ohm, G. S. (1825). "Vorläufige Anzeige des Gesetzes, nach welchem Metalle die
+      Contaktelektricität leiten." Journal für Chemie und Physik (Schweigger) 44.
+    kind: primary
+  - citation: >
+      Ohm, G. S. (1826). "Bestimmung des Gesetzes, nach welchem Metalle die
+      Contaktelektricität leiten, nebst einem Entwurfe zu einer Theorie des
+      Voltaischen Apparates und des Schweiggerschen Multiplicators." Journal für
+      Chemie und Physik 46, 137-166.
+    kind: primary
+  - citation: Ohm, G. S. (1827). Die galvanische Kette, mathematisch bearbeitet. Berlin, T. H. Riemann.
+    kind: primary
+  - citation: Fechner, G. T. (1831). Massbestimmungen über die galvanische Kette. Leipzig.
+    kind: primary
+  - citation: Fourier, J. (1822). Théorie analytique de la chaleur. Paris.
+    kind: primary
+  - citation: >
+      Schagrin, M. L. (1963). "Resistance to Ohm's law." American Journal of Physics 31.
+    kind: secondary
+  - citation: >
+      Jungnickel, C. and McCormmach, R. (1986). Intellectual Mastery of Nature.
+      Theoretical Physics from Ohm to Einstein, Vol. 1. University of Chicago Press.
+    kind: secondary
+  - citation: >
+      Pohl, G. F. (1828). Review of Ohm, Die galvanische Kette. Jahrbücher für
+      wissenschaftliche Kritik (Deutsches Museum archive record gives Nr. 11-14).
+    kind: primary
+open_issues:
+  - >
+    The eight-point data series and the constants a = 7285, b = 20 1/4 are given from
+    memory of standard secondary reproductions; they are internally consistent (the
+    hyperbola fits to about 1%) but were not confirmed against the 1826 paper in this
+    pass. Check before using as oracle data, and confirm whether the series is from
+    the 1826 Schweigger paper or reprinted in Poggendorff's Annalen.
+  - Confirm that Poggendorff suggested the thermocouple, and the bismuth-copper pairing.
+  - >
+    Confirm Ohm's employment sequence: leave from Cologne in Berlin (1826-1827),
+    resignation from Cologne (1827 or 1828), Berlin Kriegsschule, Nuremberg (1833).
+    A Deutsches Museum record holds only a draft request for release.
+  - >
+    Barlow's 1825 result (often reported as current varying inversely with the
+    square root of length) and Becquerel's measurements were not checked.
+  - >
+    Cavendish's exact conclusion and the 1781 date need checking against Maxwell's
+    edition, The Electrical Researches of the Honourable Henry Cavendish (1879).
+  - >
+    Pouillet's priority dates (1831 vs 1837) and whether his work was independent of
+    Ohm's; confirm Copley Medal year (1841) against the Royal Society list.
+  - >
+    Schagrin (1963) is cited from memory as a standard article on the reception;
+    confirm volume and title.

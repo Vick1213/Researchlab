@@ -1,0 +1,13 @@
+# Offline smoke test: replays saved replies through the full pipeline. No model calls.
+#   python -m engine run experiments/smoke_replay.yaml
+name: smoke_replay
+tasks:
+  - kepler_third_law:historical
+  - kepler_third_law:synthetic
+backends:
+  - replay:tests/fixtures/replies
+solver:
+  name: baseline
+samples: 1
+reward:
+  scheme: shaped
