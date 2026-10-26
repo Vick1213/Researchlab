@@ -1,0 +1,184 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/vick1213/researchlab/corpus/schema/case.schema.json",
+  "title": "Discovery case",
+  "description": "One historical (or post-cutoff) scientific discovery, decomposed so it can be replayed as a task.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id", "title", "scale", "field", "date_of_result", "discoverers",
+    "summary", "hidden_target",
+    "knowledge_state_before", "anomalies", "assumptions_explicit",
+    "assumptions_implicit", "the_move", "verification", "dead_ends",
+    "near_misses", "oracle_candidates", "contamination", "sources"
+  ],
+  "properties": {
+    "id": {"type": "string", "pattern": "^[a-z0-9_]+$"},
+    "title": {"type": "string"},
+    "scale": {"enum": ["minor", "major"]},
+    "field": {"type": "string"},
+    "date_of_result": {
+      "type": "string",
+      "description": "Year (YYYY) or ISO date of the result's first publication.",
+      "pattern": "^-?[0-9]{1,4}(-[0-9]{2}(-[0-9]{2})?)?$"
+    },
+    "snapshot_date": {
+      "type": "string",
+      "description": "Cutoff date T for the knowledge pack. Defaults to just before date_of_result."
+    },
+    "discoverers": {"type": "array", "items": {"type": "string"}, "minItems": 1},
+    "summary": {"type": "string", "description": "One paragraph. Not shown to the solver."},
+    "hidden_target": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["statement"],
+      "properties": {
+        "statement": {"type": "string", "description": "The result in words."},
+        "formal": {"type": "string", "description": "Equation or formal statement, if any (sympy-parsable where possible)."}
+      }
+    },
+    "knowledge_state_before": {
+      "type": "array",
+      "description": "What was known and accepted at time T.",
+      "items": {"$ref": "#/$defs/claim"},
+      "minItems": 1
+    },
+    "anomalies": {
+      "type": "array",
+      "description": "Known unexplained observations, or conflicts between accepted theories, at time T.",
+      "items": {"$ref": "#/$defs/claim"}
+    },
+    "assumptions_explicit": {
+      "type": "array",
+      "description": "Stated axioms of the dominant theory.",
+      "items": {"$ref": "#/$defs/claim"}
+    },
+    "assumptions_implicit": {
+      "type": "array",
+      "description": "Unstated shared beliefs. Mark which one(s) the discovery dropped.",
+      "items": {
+        "allOf": [{"$ref": "#/$defs/claim"}],
+        "properties": {"dropped_by_discovery": {"type": "boolean"}}
+      }
+    },
+    "the_move": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["types", "description"],
+      "properties": {
+        "types": {
+          "type": "array",
+          "minItems": 1,
+          "items": {"$ref": "#/$defs/move_type"}
+        },
+        "description": {"type": "string"}
+      }
+    },
+    "verification": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["how", "time_to_acceptance"],
+      "properties": {
+        "how": {"type": "string"},
+        "data": {"type": "array", "items": {"type": "string"}},
+        "time_to_acceptance": {"type": "string"}
+      }
+    },
+    "dead_ends": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["who", "attempt", "why_failed"],
+        "properties": {
+          "who": {"type": "string"},
+          "attempt": {"type": "string"},
+          "why_failed": {"type": "string"}
+        }
+      }
+    },
+    "near_misses": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["who", "had", "missed"],
+        "properties": {
+          "who": {"type": "string"},
+          "had": {"type": "string"},
+          "missed": {"type": "string"}
+        }
+      }
+    },
+    "oracle_candidates": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["kind", "description", "llm_free"],
+        "properties": {
+          "kind": {"enum": ["data_fit", "correspondence_limit", "symbolic", "simulator", "consistency", "prediction", "llm_judge", "other"]},
+          "description": {"type": "string"},
+          "llm_free": {"type": "boolean", "description": "False means an LLM judge is involved; flag it."},
+          "cost": {"enum": ["cheap", "moderate", "expensive"]}
+        }
+      }
+    },
+    "contamination": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["level", "notes"],
+      "properties": {
+        "level": {"enum": ["total", "high", "medium", "low", "none"], "description": "How likely a frontier model already knows the target."},
+        "post_cutoff": {"type": "boolean"},
+        "notes": {"type": "string"}
+      }
+    },
+    "sources": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["citation"],
+        "properties": {
+          "citation": {"type": "string"},
+          "url": {"type": "string"},
+          "kind": {"enum": ["primary", "secondary", "reference"]}
+        }
+      }
+    },
+    "open_issues": {
+      "type": "array",
+      "description": "Things in this file that still need checking against sources.",
+      "items": {"type": "string"}
+    }
+  },
+  "$defs": {
+    "claim": {
+      "type": "object",
+      "required": ["claim"],
+      "properties": {
+        "claim": {"type": "string"},
+        "date": {"type": "string"},
+        "source": {"type": "string"},
+        "confidence": {"enum": ["established", "likely", "uncertain"], "description": "Our confidence in the historical claim, not the science."}
+      }
+    },
+    "move_type": {
+      "enum": [
+        "drop_shared_assumption",
+        "unify_conflicting_theories",
+        "limiting_case",
+        "analogy_transfer",
+        "symmetry_invariance",
+        "trust_data_over_theory",
+        "trust_theory_over_data",
+        "change_the_question",
+        "new_instrument_or_data",
+        "empirical_pattern_fit"
+      ]
+    }
+  }
+}

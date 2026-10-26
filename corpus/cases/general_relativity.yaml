@@ -1,0 +1,506 @@
+id: general_relativity
+title: General relativity (Einstein 1915)
+scale: major
+field: physics
+date_of_result: "1915-11-25"
+snapshot_date: "1915-11-03"
+discoverers: [Albert Einstein]
+summary: >
+  Special relativity had no place for Newtonian gravitation, which acts
+  instantaneously. From 1907 Einstein pursued a theory built on the equivalence of
+  gravitational and inertial mass, which he took up as an equivalence of a uniform
+  gravitational field and an accelerated frame. That principle gave him
+  gravitational redshift and light bending (1907, 1911), led him to a variable
+  speed of light (1912), and then to describing gravity by a metric tensor
+  g_mu_nu (1912-1913, with Marcel Grossmann). The 1913 Entwurf theory used field
+  equations that were not generally covariant. Einstein defended this with the
+  "hole argument" and later found that the theory gave only about 18 arcsec per
+  century for Mercury's perihelion. In November 1915 he returned to generally
+  covariant equations in four communications to the Prussian Academy (4, 11, 18
+  and 25 November). The 18 November paper derived the anomalous Mercury perihelion
+  advance of about 43 arcsec per century and a light deflection of 1.7 arcsec at
+  the solar limb. The 25 November paper gave the final field equations. David
+  Hilbert submitted a paper on 20 November 1915 with a variational derivation, and
+  the priority question has been debated since.
+hidden_target:
+  statement: >
+    Gravitation is the curvature of a four-dimensional pseudo-Riemannian spacetime
+    whose metric g_mu_nu replaces the Newtonian potential. Freely falling bodies
+    and light follow geodesics of this metric. The metric is determined by matter
+    through generally covariant field equations relating the Ricci curvature to
+    the energy-momentum tensor, with the trace term required by energy-momentum
+    conservation (contracted Bianchi identity). In the weak-field, slow-motion
+    limit these reduce to Newtonian gravity with g_00 = -(1 + 2 phi/c^2). They
+    predict an extra perihelion advance of 6 pi G M / (c^2 a (1 - e^2)) per orbit
+    (about 43 arcsec per century for Mercury), deflection of starlight grazing the
+    Sun of 4 G M / (c^2 R) (about 1.75 arcsec), and gravitational redshift of
+    clocks, Delta nu / nu = Delta phi / c^2.
+  formal: "R_mu_nu - (1/2)*R*g_mu_nu = (8*pi*G/c**4)*T_mu_nu"
+knowledge_state_before:
+  - claim: >
+      Newtonian gravitation with instantaneous action at a distance, extremely
+      successful for planetary motion (including the discovery of Neptune in 1846
+      from Le Verrier's and Adams's perturbation calculations).
+    confidence: established
+  - claim: >
+      Special relativity (1905) and Minkowski's four-dimensional spacetime
+      formulation (1908). Newtonian gravity is not Lorentz-covariant.
+    date: 1905-1908
+    confidence: established
+  - claim: >
+      Equality of inertial and gravitational mass to high precision. Newton's
+      pendulum experiments, Bessel (1832), and Eötvös's torsion-balance experiments
+      (1889; extended with Pekár and Fekete in 1906-1909, prize memoir 1909,
+      full publication 1922) reaching about 1 part in 10^8 or better.
+    date: 1889-1909
+    source: Eötvös, Pekár & Fekete, Annalen der Physik 68 (1922), for the full results
+    confidence: likely
+  - claim: >
+      Einstein's equivalence principle, 1907. A uniform gravitational field is
+      physically equivalent to a uniformly accelerated reference frame. He later
+      called the insight that a freely falling observer feels no gravitational
+      field his "happiest thought". The 1907 review already derived gravitational
+      time dilation (redshift) and the bending of light.
+    date: "1907"
+    source: Einstein, Jahrbuch der Radioaktivität und Elektronik 4 (1907)
+    confidence: established
+  - claim: >
+      Einstein 1911 predicted light deflection at the solar limb of 0.83 arcsec
+      (half the later GR value) and proposed testing it at a solar eclipse.
+      Soldner (1801, published 1804) had derived a similar Newtonian corpuscular
+      value.
+    date: "1911"
+    source: Einstein, "Über den Einfluß der Schwerkraft auf die Ausbreitung des Lichtes", Annalen der Physik 35 (1911)
+    confidence: established
+  - claim: >
+      Einstein's 1912 static theories, in which the speed of light c(x) acts as
+      the gravitational potential. He abandoned Lorentz covariance as a requirement
+      for gravity, and discussed this with Abraham.
+    date: "1912"
+    confidence: established
+  - claim: >
+      Mathematical tools: Riemann's geometry of manifolds (1854 lecture, published
+      1868), Christoffel symbols (1869), and Ricci and Levi-Civita's absolute
+      differential calculus (1900). Grossmann introduced these to Einstein in 1912.
+    date: 1854-1900
+    confidence: established
+  - claim: >
+      The Entwurf theory (Einstein and Grossmann 1913). Gravity is described by the
+      metric tensor and motion by geodesics. The field equations are not generally
+      covariant. The authors had considered field equations based on the Ricci
+      tensor and rejected them, believing they did not reduce to the Newtonian
+      limit and conflicted with energy-momentum conservation.
+    date: "1913"
+    source: Einstein & Grossmann, Zeitschrift für Mathematik und Physik 62 (1913)
+    confidence: established
+  - claim: >
+      Einstein's "hole argument" (1913-1914). It purported to show that generally
+      covariant field equations cannot determine the metric uniquely inside a
+      matter-free region, so general covariance must be restricted.
+    date: 1913-1914
+    confidence: established
+  - claim: >
+      Einstein-Besso manuscript (1913). Calculation of Mercury's perihelion in the
+      Entwurf theory gave about 18 arcsec per century. Einstein did not publish
+      this, and the error that made it look better at first was later corrected.
+    date: "1913"
+    source: Collected Papers of Albert Einstein, Vol. 4, Doc. 14
+    confidence: likely
+  - claim: >
+      Nordström's scalar gravitation theories (1912-1913). They are Lorentz
+      covariant and satisfy the equality of inertial and gravitational mass. Einstein
+      and Fokker (1914) showed the second version is equivalent to a conformally flat
+      metric theory.
+    date: 1912-1914
+    confidence: established
+  - claim: >
+      By October 1915 Einstein had found further faults in the Entwurf theory:
+      it does not allow rotating frames as the theory claimed, and the
+      derivation he had used to pick out its field equations was flawed.
+    date: "1915"
+    confidence: likely
+anomalies:
+  - claim: >
+      Anomalous advance of Mercury's perihelion. After subtracting the effects of
+      the other planets, Le Verrier (1859) found an unexplained excess of about 38
+      arcsec per century. Newcomb (1882, revised in 1895) gave about 43 arcsec per
+      century. The observed total precession relative to the equinox is about
+      5600 arcsec per century, most of it due to precession of the equinoxes.
+    date: 1859-1895
+    source: Le Verrier (1859); Newcomb, Astronomical Papers of the American Ephemeris (1882, 1895); Roseveare (1982)
+    confidence: likely
+  - claim: >
+      Newtonian gravitation is incompatible with special relativity, since it
+      requires instantaneous action and is not Lorentz covariant. This is a conflict
+      between two accepted theories, not an observation.
+    confidence: established
+  - claim: >
+      The equality of inertial and gravitational mass is an unexplained
+      coincidence in Newtonian mechanics. Two independent constants that happen to
+      be equal to high precision.
+    confidence: established
+  - claim: >
+      Special relativity privileges inertial frames without explaining why. Mach
+      had criticized absolute space and argued that inertia should be due to
+      distant masses, and Einstein took this as a motivation for extending
+      relativity to accelerated frames.
+    source: Mach, Die Mechanik in ihrer Entwickelung (1883)
+    confidence: established
+assumptions_explicit:
+  - claim: Gravity is a force described by a scalar potential satisfying Poisson's equation (Newton) or a relativistic generalization of it.
+    confidence: established
+  - claim: Spacetime has the flat Minkowski geometry of special relativity, and physical laws are Lorentz covariant.
+    confidence: established
+  - claim: >
+      Physical laws distinguish inertial frames. The principle of relativity holds
+      only for uniform motion.
+    confidence: established
+assumptions_implicit:
+  - claim: >
+      The geometry of space and time is fixed and given in advance, independent of
+      matter. Gravity is a field on a fixed background rather than the structure of
+      the background itself.
+    dropped_by_discovery: true
+    confidence: established
+  - claim: >
+      Coordinates have direct metric meaning. A coordinate difference measures a
+      physical length or time, and points of spacetime are individuated by their
+      coordinates independently of the metric field.
+    dropped_by_discovery: true
+    confidence: established
+  - claim: >
+      Gravity is a separate force acting on bodies in an inertial frame.
+      Free fall is accelerated motion rather than inertial motion.
+    dropped_by_discovery: true
+    confidence: established
+  - claim: >
+      Gravity should be a scalar theory by analogy with Newtonian gravity. Most
+      contemporaries (Abraham, Nordström, Mie) worked with scalar or vector
+      fields.
+    dropped_by_discovery: true
+    confidence: likely
+  - claim: >
+      The speed of light is a universal constant everywhere. Already dropped by
+      Einstein in 1911-1912 for gravitational fields, and recovered in GR only
+      locally.
+    dropped_by_discovery: true
+    confidence: established
+the_move:
+  types: [drop_shared_assumption, analogy_transfer, symmetry_invariance, unify_conflicting_theories, limiting_case, trust_theory_over_data]
+  description: >
+    Einstein took the equality of inertial and gravitational mass, until then a
+    coincidence, as the basic principle. Because a uniform gravitational field
+    is locally indistinguishable from acceleration (the 1907 "elevator" insight),
+    a theory of gravity had to be a theory of general reference frames, and
+    gravity could not be a separate force on a fixed background. By analogy with
+    Gauss's theory of curved surfaces and Minkowski's geometric formulation of SR,
+    he replaced the scalar potential with the ten components of a metric g_mu_nu,
+    so free fall became geodesic motion and the background geometry became
+    dynamical. The search for field equations was guided by several requirements
+    pulling against each other: general covariance, a Newtonian limit (the
+    correspondence principle: g_00 must reduce to 1 + 2 phi/c^2 in a static weak
+    field), energy-momentum conservation, and Mach-inspired ideas about relativity of
+    rotation. Janssen and Renn describe two strategies, a "mathematical" one
+    starting from the Riemann tensor and a "physical" one starting from an analogy
+    with field theory and energy conservation. Einstein used the physical one for the
+    Entwurf theory and in late 1915 combined the two. The implicit assumption
+    dropped at the last step was that coordinates carry physical meaning on their
+    own. This removes the hole argument, since diffeomorphic metrics describe the
+    same physical situation (Einstein's "point-coincidence" argument, late 1915 to
+    early 1916). The Mercury perihelion result served as a check, not as the
+    starting point: no free parameter was adjusted to fit it.
+verification:
+  how: >
+    Three classical tests. (1) Mercury's perihelion, already known: the 18 November
+    1915 paper derived about 43 arcsec per century from the vacuum equations with
+    no adjustable parameter. Schwarzschild's exact solution followed in January
+    1916. (2) Light deflection, measured at the solar eclipse of 29 May 1919 by
+    British expeditions to Sobral (Brazil; Davidson and Crommelin) and Principe
+    (Eddington and Cottingham), organized by Dyson. Announced 6 November 1919.
+    The Sobral 4-inch lens gave about 1.98 arcsec, Principe gave about 1.61 arcsec,
+    against 0.87 (half) and 1.75 (GR). The Sobral astrographic plates, which gave a
+    value closer to the half-deflection, were discounted because of focus problems
+    attributed to heating of the coelostat mirror. Earman and Glymour (1980) argued
+    that the data were weak and the selection was biased in favour of Einstein.
+    Collins and Pinch popularized that reading. Kennefick and others have since
+    defended the decision, citing the documented systematic errors in the
+    astrographic plates and a 1979 reanalysis of the Sobral plates by Harvey that
+    supported the full deflection. Later eclipse results (1922 Wallal, Campbell and
+    Trumpler) were cleaner. (3) Gravitational redshift. Solar spectral line
+    measurements were inconclusive for decades because of convective and pressure
+    shifts, and Adams's 1925 Sirius B measurement was later found to be unreliable.
+    The first clean laboratory test was Pound and Rebka (1959-1960), who used the
+    Mössbauer effect in Fe-57 gamma rays over the 22.5 m Jefferson Laboratory
+    tower at Harvard. They confirmed a fractional shift of g h / c^2 (about
+    2.5e-15) to about 10%, improved to about 1% by Pound and Snider (1964-1965).
+    Later tests include Shapiro delay (proposed 1964), binary pulsar orbital decay
+    (Hulse-Taylor 1974 onward), and gravitational waves (LIGO 2015).
+  data:
+    - Mercury anomalous perihelion advance, about 43 arcsec per century (Newcomb 1895; later Clemence 1947)
+    - 1919 eclipse deflections (Sobral 4-inch about 1.98 arcsec, Principe about 1.61 arcsec, Sobral astrographic discounted)
+    - 1922 Wallal eclipse deflection (Campbell and Trumpler)
+    - Pound-Rebka 1960 redshift ratio to prediction about 1.05 +/- 0.10 (to be confirmed)
+    - Eötvös-type null results for the composition dependence of free fall
+  time_to_acceptance: >
+    The perihelion result persuaded several theorists at once (late 1915 to 1916).
+    Public and broad professional acceptance followed the November 1919
+    announcement, though the light-deflection result was contested into the 1920s
+    and the redshift remained unconfirmed until 1960. GR then stayed largely outside
+    mainstream physics until the "renaissance" of the late 1950s and 1960s.
+dead_ends:
+  - who: Gunnar Nordström
+    attempt: >
+      Lorentz-covariant scalar theory of gravity (1912-1913). Satisfies the
+      equality of inertial and gravitational mass and has a sensible Newtonian
+      limit. Einstein regarded it as the only serious competitor in 1913-1914.
+    why_failed: >
+      Predicts no bending of light, since it is conformally flat (Einstein-Fokker
+      1914), and a retrograde perihelion shift for Mercury of about -7 arcsec per
+      century (one-sixth of the GR value with the opposite sign). Both contradict
+      observation. The light-bending failure was decisive after 1919.
+  - who: Einstein and Grossmann
+    attempt: >
+      Entwurf theory (1913). A metric theory with field equations restricted to
+      non-generally-covariant form, supported by the hole argument and by a
+      mistaken belief that Ricci-based equations failed the Newtonian limit.
+    why_failed: >
+      Gave about 18 arcsec per century for Mercury (Einstein-Besso 1913, not
+      published at the time). It did not make rotation relative as Einstein had
+      hoped, and the uniqueness argument he used to select the equations
+      contained an error. Abandoned in November 1915.
+  - who: Max Abraham
+    attempt: Scalar theory with variable speed of light (1912), modifying Einstein's static theory.
+    why_failed: >
+      Inconsistent with special relativity in its infinitesimal form. Einstein and
+      Abraham argued over it publicly in 1912. It made no correct new predictions.
+  - who: Gustav Mie
+    attempt: Gravitation within his nonlinear electromagnetic field theory of matter (1912-1913), Lorentz covariant.
+    why_failed: >
+      Violated the equality of inertial and gravitational mass in the form
+      Einstein required. Mie's theory nevertheless influenced Hilbert's approach.
+  - who: Astronomers (Le Verrier, Seeliger, Hall, Newcomb)
+    attempt: >
+      Newtonian explanations of the Mercury anomaly. An intra-Mercurial planet
+      ("Vulcan") or ring of matter, Seeliger's zodiacal-light dust ellipsoids,
+      Hall's 1894 modification of the inverse-square exponent to 2.00000016, and
+      solar oblateness.
+    why_failed: >
+      Vulcan was never found despite searches at eclipses. Hall's exponent
+      spoiled the Moon's motion, as shown by E. W. Brown. Seeliger's model needed
+      tuned parameters and was ad hoc. Solar oblateness was too small.
+near_misses:
+  - who: David Hilbert
+    had: >
+      A variational derivation of generally covariant gravitational field
+      equations from an action based on the curvature scalar, combined with Mie's
+      electromagnetic theory of matter. His paper was submitted 20 November 1915,
+      five days before Einstein's final equations.
+    missed: >
+      Contested. Corry, Renn and Stachel (1997) found that the printer's proofs
+      (dated 6 December 1915) do not contain the explicit field equations in final
+      form and that the paper was revised before publication (March 1916). The
+      proofs are mutilated, and Winterberg and others argue the missing piece may
+      have contained them. Hilbert was in close contact with Einstein during
+      November 1915, including a visit by Einstein to Göttingen in summer 1915.
+      Hilbert's framework was a unified theory of gravitation and electromagnetism,
+      and he did not derive the perihelion or the deflection. Hilbert himself did
+      not claim priority for the physical theory. Treat this as a near-simultaneous
+      parallel result rather than a clear miss.
+  - who: Gunnar Nordström
+    had: A consistent relativistic theory of gravity respecting the equivalence of inertial and gravitational mass.
+    missed: >
+      Kept a scalar potential in flat spacetime, so it has no light bending. This
+      is the near miss most useful for the oracle, since it passes the Newtonian
+      limit and the Eötvös constraint and fails only the deflection and perihelion
+      tests.
+  - who: Einstein (1913-1915)
+    had: The metric, geodesic motion, the Ricci tensor (considered and rejected in the Zurich notebook, 1912-1913), and a Mercury calculation method.
+    missed: >
+      Rejected the right equations for two years because of mistaken beliefs about
+      the Newtonian limit and coordinate conditions and because of the hole
+      argument. This makes the Zurich notebook a useful case of the correct
+      candidate being discarded by a faulty correspondence check.
+  - who: Johann Georg von Soldner
+    had: A Newtonian calculation of light deflection by the Sun (0.84 arcsec, 1801, published 1804).
+    missed: Half the GR value, and no theory of gravity beyond Newton. Rediscovered and publicized in 1921 by Lenard in an attempt to deny Einstein's priority.
+oracle_candidates:
+  - kind: correspondence_limit
+    description: >
+      Newtonian limit. For a static, weak, slowly varying field, linearize the
+      candidate field equations around Minkowski space (g = eta + h, |h| << 1,
+      v << c) and verify symbolically in sympy that h_00 = -2 phi/c^2 with
+      nabla^2 phi = 4 pi G rho, and that geodesic motion reduces to
+      d^2x/dt^2 = -grad phi. This is the check Einstein's Zurich notebook got wrong,
+      so it is worth implementing carefully (gauge/coordinate condition handled
+      explicitly).
+    llm_free: true
+    cost: moderate
+  - kind: correspondence_limit
+    description: >
+      Special-relativistic limit. In the absence of matter and with flat
+      boundary conditions, the candidate must admit Minkowski space as a
+      solution, and local physics must be Lorentz covariant.
+    llm_free: true
+    cost: cheap
+  - kind: symbolic
+    description: >
+      General covariance and conservation. Check symbolically (sympy tensor
+      module, or a small Cadabra/xAct-free script computing Christoffel symbols and
+      curvature for generic metrics) that the left side of the candidate field
+      equations is a tensor and that its covariant divergence vanishes identically
+      (contracted Bianchi identity), so the equations imply nabla_mu T^mu_nu = 0.
+      Rejects R_mu_nu = kappa T_mu_nu without the trace term except where T has
+      zero trace.
+    llm_free: true
+    cost: moderate
+  - kind: data_fit
+    description: >
+      Mercury perihelion. Solve the candidate field equations for a static,
+      spherically symmetric vacuum (or use the solver's metric directly), integrate
+      the geodesic equation for Mercury's orbit (a = 5.79e10 m, e = 0.2056,
+      period 87.97 d, GM_sun = 1.327e20 m^3/s^2), and require an extra advance of
+      43 +/- 1 arcsec per century (formula 6 pi G M / (c^2 a (1 - e^2)) per orbit).
+      Entwurf (about 18), Nordström (about -7) and Newton (0) all fail. Can be done
+      as a symbolic first-order perturbation or numerically.
+    llm_free: true
+    cost: moderate
+  - kind: prediction
+    description: >
+      Light deflection at the solar limb. Compute the null-geodesic deflection for
+      impact parameter R_sun = 6.96e8 m. Require 1.75 +/- 0.1 arcsec. Distinguishes
+      the full GR value from the 1911 equivalence-principle-only value (0.87) and
+      from Nordström (0). Compare to the 1919 data with their stated errors, noting
+      that the historical data alone only weakly discriminate. Modern VLBI
+      measurements give gamma = 1 to about 1e-4.
+    llm_free: true
+    cost: cheap
+  - kind: prediction
+    description: >
+      Gravitational redshift (Pound-Rebka). Predicted fractional frequency shift
+      for 22.5 m height in Earth gravity must be g h / c^2, about 2.46e-15.
+      Any metric theory satisfying the equivalence principle passes, so this
+      separates metric theories from non-metric ones, not GR from Nordström.
+    llm_free: true
+    cost: cheap
+  - kind: consistency
+    description: >
+      Universality of free fall. The candidate's equations of motion for test
+      bodies must be independent of composition and mass (Eötvös constraint at
+      about 1e-8 to 1e-9 for the snapshot). Check structurally: the test-body
+      equation of motion contains no body-dependent parameter.
+    llm_free: true
+    cost: cheap
+  - kind: prediction
+    description: >
+      Held-out modern tests the solver never sees: Shapiro delay (Cassini 2003,
+      gamma - 1 about 2e-5), Hulse-Taylor binary pulsar orbital decay from
+      quadrupole gravitational radiation, frame dragging (Gravity Probe B).
+      Reduce the candidate to PPN parameters (beta, gamma) where possible and
+      compare to published bounds. Requires the candidate to be in metric form.
+    llm_free: true
+    cost: expensive
+  - kind: llm_judge
+    description: >
+      Did the solver identify fixed background geometry, and the physical meaning
+      of coordinates, as assumptions and drop them? Needed for the axiomatizer
+      study because the empirical oracles can in principle be passed by
+      non-geometric reformulations (e.g. spin-2 field theory in flat space, which
+      reproduces the GR field equations, as Feynman and Deser showed). This oracle
+      uses an LLM. Fix the rubric before running.
+    llm_free: false
+    cost: moderate
+contamination:
+  level: total
+  post_cutoff: false
+  notes: >
+    Every frontier model can write the Einstein field equations, the Schwarzschild
+    metric, the 43 arcsec and 1.75 arcsec numbers, and the standard story
+    (elevator, Grossmann, Entwurf, hole argument, Hilbert). Passing the oracles on
+    the plain case shows recall only. A time-locked model trained on pre-1930 text
+    (talkie-1930-style) is useless here, since GR was widely published and popular
+    after 1919. A model trained only on pre-1913 text would know SR, Minkowski,
+    Einstein 1907 and 1911, Abraham, Nordström 1912, Riemann and Ricci-Levi-Civita,
+    and the Mercury anomaly, but not the Entwurf. That is the most informative
+    setting. Even then (a) the pre-1913 corpus is tiny and narrow, (b) leakage
+    through reprints and later editions is hard to exclude, (c) a small period
+    model failing says little about frontier models, and (d) a success would still
+    have to be checked against the oracles above, since producing the Ricci tensor
+    from Grossmann's tools is easier than producing it with the correct trace
+    term and Newtonian limit. More informative are obfuscated variants: a
+    synthetic world with a different post-Newtonian correction, or a toy 2+1 or
+    scalar-tensor world, where the solver has to derive a non-memorized
+    perihelion number.
+sources:
+  - citation: Einstein, A. (1907). "Über das Relativitätsprinzip und die aus demselben gezogenen Folgerungen." Jahrbuch der Radioaktivität und Elektronik 4.
+    kind: primary
+  - citation: Einstein, A. (1911). "Über den Einfluß der Schwerkraft auf die Ausbreitung des Lichtes." Annalen der Physik 35.
+    kind: primary
+  - citation: Einstein, A. & Grossmann, M. (1913). "Entwurf einer verallgemeinerten Relativitätstheorie und einer Theorie der Gravitation." Zeitschrift für Mathematik und Physik 62.
+    kind: primary
+  - citation: Einstein, A. (1915). "Erklärung der Perihelbewegung des Merkur aus der allgemeinen Relativitätstheorie." Sitzungsberichte der Königlich Preußischen Akademie der Wissenschaften (18 November 1915).
+    kind: primary
+  - citation: Einstein, A. (1915). "Die Feldgleichungen der Gravitation." Sitzungsberichte der Königlich Preußischen Akademie der Wissenschaften (25 November 1915).
+    kind: primary
+  - citation: Einstein, A. (1916). "Die Grundlage der allgemeinen Relativitätstheorie." Annalen der Physik 49.
+    kind: primary
+  - citation: Hilbert, D. (1915). "Die Grundlagen der Physik (Erste Mitteilung)." Nachrichten von der Gesellschaft der Wissenschaften zu Göttingen (submitted 20 November 1915, published 1916).
+    kind: primary
+  - citation: Dyson, F. W., Eddington, A. S. & Davidson, C. (1920). "A Determination of the Deflection of Light by the Sun's Gravitational Field, from Observations Made at the Total Eclipse of May 29, 1919." Philosophical Transactions of the Royal Society A 220.
+    kind: primary
+  - citation: Pound, R. V. & Rebka, G. A. (1960). "Apparent Weight of Photons." Physical Review Letters 4.
+    kind: primary
+  - citation: Pound, R. V. & Rebka, G. A. (1959). "Gravitational Red-Shift in Nuclear Resonance." Physical Review Letters 3.
+    kind: primary
+  - citation: Pais, A. (1982). 'Subtle is the Lord...' The Science and the Life of Albert Einstein. Oxford University Press.
+    kind: secondary
+  - citation: Renn, J. (ed.) (2007). The Genesis of General Relativity (4 vols.). Springer.
+    kind: secondary
+  - citation: Janssen, M. & Renn, J. (2015). "Arch and scaffold. How Einstein found his field equations." Physics Today 68(11).
+    kind: secondary
+  - citation: Janssen, M. & Renn, J. (2022). How Einstein Found His Field Equations. Sources and Interpretation. Birkhäuser / Springer.
+    kind: secondary
+  - citation: Norton, J. D. (1984). "How Einstein found his field equations, 1912-1915." Historical Studies in the Physical Sciences 14.
+    kind: secondary
+  - citation: Stachel, J. (1989). "Einstein's Search for General Covariance, 1912-1915." In Howard, D. & Stachel, J. (eds.), Einstein and the History of General Relativity (Einstein Studies 1). Birkhäuser.
+    kind: secondary
+  - citation: Earman, J. & Glymour, C. (1980). "Relativity and Eclipses. The British eclipse expeditions of 1919 and their predecessors." Historical Studies in the Physical Sciences 11.
+    kind: secondary
+  - citation: Kennefick, D. (2019). No Shadow of a Doubt. The 1919 Eclipse That Confirmed Einstein's Theory of Relativity. Princeton University Press.
+    kind: secondary
+  - citation: Corry, L., Renn, J. & Stachel, J. (1997). "Belated Decision in the Hilbert-Einstein Priority Dispute." Science 278, 1270-1273.
+    kind: secondary
+  - citation: Roseveare, N. T. (1982). Mercury's Perihelion from Le Verrier to Einstein. Oxford University Press.
+    kind: secondary
+  - citation: Will, C. M. (2014). "The Confrontation between General Relativity and Experiment." Living Reviews in Relativity 17.
+    kind: reference
+  - citation: Collected Papers of Albert Einstein, Vol. 4 (The Swiss Years. Writings 1912-1914), Princeton University Press. Includes the Zurich notebook and the Einstein-Besso manuscript.
+    url: https://einsteinpapers.press.princeton.edu/vol4-doc/
+    kind: primary
+open_issues:
+  - >
+    Le Verrier's 1859 excess (commonly given as 38 arcsec per century) and
+    Newcomb's values (sources variously give 41.24 for 1882 and 43.37 for 1895)
+    need checking against Roseveare (1982). The case uses "about 43" for the target.
+  - >
+    Eötvös precision. Commonly quoted as about 1 in 10^8 (1889-1909) and a few
+    parts in 10^9 for the 1922 publication. The 1889 figure (sometimes given as
+    1 in 2e7) was not confirmed.
+  - >
+    Sobral astrographic result. The value of about 0.93 arcsec is commonly
+    quoted for the discounted plates but was not confirmed against Dyson,
+    Eddington and Davidson (1920). The quoted uncertainties for the 4-inch and
+    Principe results differ between secondary sources (e.g. +/-0.12 vs +/-0.30
+    for Sobral).
+  - >
+    Pound-Rebka 1960 ratio to prediction (commonly quoted as 1.05 +/- 0.10) and
+    tower height (22.5 m) are standard figures, not checked against the PRL. The
+    1959 PRL proposed the method, and the 1960 PRL reported the result.
+  - >
+    Hilbert priority. Whether the cut portion of the proofs contained the field
+    equations is unresolved. Corry-Renn-Stachel (1997) versus Winterberg (2004)
+    and Sauer's later work. The exact dates of Hilbert's revisions were not checked.
+  - The Einstein-Besso 18 arcsec figure and the correction of an initial numerical error are from Collected Papers Vol. 4 editorial notes as summarized by secondary sources. Confirm.
+  - The date and wording of the "happiest thought" (glücklichste Gedanke) come from Einstein's unpublished 1920 manuscript for Nature, not a 1907 document. Confirm.
+  - Hall's exponent value (2 + 1.6e-7) and Brown's lunar refutation are from memory. Check against Roseveare.
+  - Adams's 1925 Sirius B redshift. The usual verdict that it was unreliable (the white dwarf radius was overestimated) should be confirmed.
+  - Einstein's summer 1915 Göttingen lectures (late June to early July 1915) as the start of the Einstein-Hilbert contact. Confirm dates.

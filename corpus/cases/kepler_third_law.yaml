@@ -1,0 +1,111 @@
+id: kepler_third_law
+title: Kepler's third (harmonic) law
+scale: minor
+field: astronomy
+date_of_result: "1619"
+snapshot_date: "1618-05-14"
+discoverers: [Johannes Kepler]
+summary: >
+  Kepler spent decades looking for a single rule linking the sizes of the planetary
+  orbits to their periods. On 15 May 1618 he found that the square of a planet's
+  period is proportional to the cube of its mean distance from the Sun, and
+  published it in Harmonices Mundi (1619). It was purely empirical; the physical
+  explanation came with Newton's gravitation in 1687.
+hidden_target:
+  statement: >
+    For every planet, the square of the orbital period divided by the cube of the
+    mean distance (semi-major axis) is the same constant.
+  formal: "T**2 = k * a**3"
+knowledge_state_before:
+  - claim: Heliocentric ordering of the six known planets and their relative mean distances (in units of the Earth-Sun distance) from Copernicus, refined with Brahe's observations.
+    source: Copernicus, De revolutionibus (1543); Brahe observations (1570s-1601)
+    confidence: established
+  - claim: Sidereal periods of the six planets, known to good precision since antiquity and refined by Copernicus.
+    confidence: established
+  - claim: Kepler's first two laws (elliptical orbits with the Sun at one focus; equal areas in equal times), from Brahe's Mars data.
+    date: "1609"
+    source: Kepler, Astronomia Nova (1609)
+    confidence: established
+  - claim: Outer planets move more slowly as well as having longer paths; period grows faster than distance.
+    confidence: established
+  - claim: Galileo's four Jupiter moons, with rough periods and distances (in Jupiter radii).
+    date: "1610"
+    source: Galileo, Sidereus Nuncius (1610); Simon Marius, Mundus Iovialis (1614)
+    confidence: established
+anomalies:
+  - claim: No accepted rule connected orbital size and period; Kepler's own 1596 nested-polyhedra model fit the distances only roughly (errors of several percent) and said nothing about periods.
+    source: Kepler, Mysterium Cosmographicum (1596)
+    confidence: established
+assumptions_explicit:
+  - claim: Planetary distances and periods are governed by a harmonic or geometric plan (the Pythagorean / Platonic frame Kepler worked in).
+    confidence: established
+  - claim: The Sun exerts some motive influence on the planets that weakens with distance.
+    source: Astronomia Nova (1609)
+    confidence: established
+assumptions_implicit:
+  - claim: The relation between period and distance should be simple (linear or a small integer ratio), as in musical intervals.
+    dropped_by_discovery: true
+    confidence: likely
+  - claim: The relationship would be found in the geometry of the orbits themselves, not in a power law between two scalars.
+    dropped_by_discovery: true
+    confidence: uncertain
+the_move:
+  types: [empirical_pattern_fit]
+  description: >
+    Kepler compared powers of the two quantities until he found a pair whose ratio
+    was the same for every planet: the 3/2 power of distance tracks the period. It
+    was an exhaustive numerical search guided by a conviction that a rule existed,
+    which makes this the clearest example of a discovery a symbolic-regression
+    style search can reproduce.
+verification:
+  how: >
+    Checked against all six planets at once (agreement within the precision of the
+    data, under about 1%). Kepler later noted in the Epitome (1618-1621) that the
+    Jovian moons obey the same rule with a different constant. Newton derived it
+    from inverse-square gravitation in the Principia (1687), with a correction for
+    the planet's mass.
+  data: [Planetary periods and mean distances, Galilean moon periods and distances]
+  time_to_acceptance: Roughly 70 years. The first two laws gained wide acceptance only after the Rudolphine Tables (1627) proved accurate. The third law was treated as a curiosity until Newton derived it.
+dead_ends:
+  - who: Johannes Kepler
+    attempt: Nested Platonic solids setting the ratios of orbital spheres (Mysterium Cosmographicum, 1596).
+    why_failed: Fit distances only to a few percent; no account of periods; the number of planets (six) was not actually fixed.
+  - who: Johannes Kepler
+    attempt: Linear and musical-ratio relations between distances and speeds before 1618.
+    why_failed: Ratios did not hold across all planets.
+    # needs source check: details of the pre-1618 attempts
+near_misses: []
+oracle_candidates:
+  - kind: data_fit
+    description: Fit the candidate law to the six planets with at most two free parameters; require max relative period error under 2%.
+    llm_free: true
+    cost: cheap
+  - kind: prediction
+    description: Hold out the Galilean moons. Refit only a constant for the new central body; the exponent must carry over.
+    llm_free: true
+    cost: cheap
+  - kind: consistency
+    description: Dimensional homogeneity of the candidate once units are declared for every constant.
+    llm_free: true
+    cost: cheap
+contamination:
+  level: total
+  post_cutoff: false
+  notes: >
+    Every frontier model knows T^2 proportional to a^3 by name. Useful only as a scaffolding
+    sanity check and an oracle smoke test, never as evidence of reasoning. Obfuscated
+    variants (renamed quantities, synthetic systems with non-3/2 exponents) are needed
+    to measure anything.
+sources:
+  - citation: Kepler, J. (1619). Harmonices Mundi, Book V, chapter 3.
+    kind: primary
+  - citation: Kepler, J. (1618-1621). Epitome Astronomiae Copernicanae.
+    kind: primary
+  - citation: Gingerich, O. (1975). "Kepler's Place in Astronomy." Vistas in Astronomy 18.
+    kind: secondary
+  - citation: Stephenson, B. (1994). Kepler's Physical Astronomy. Princeton University Press.
+    kind: secondary
+open_issues:
+  - Confirm the 15 May 1618 date and the wording of the Harmonices Mundi passage against a translation.
+  - Confirm the Epitome passage about Jupiter's moons (book and page).
+  - Document the specific pre-1618 relations Kepler tried.

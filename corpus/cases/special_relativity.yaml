@@ -1,0 +1,518 @@
+id: special_relativity
+title: Special relativity (Einstein 1905)
+scale: major
+field: physics
+date_of_result: "1905-09-26"
+snapshot_date: "1905-06-29"
+discoverers: [Albert Einstein]
+summary: >
+  By 1905 Maxwell-Lorentz electrodynamics was formulated in a privileged ether
+  frame, yet every attempt to detect the Earth's motion through that ether had
+  failed, at first and later at second order in v/c. Lorentz, FitzGerald, Larmor and
+  Poincaré had built a dynamical explanation: moving bodies contract, clocks in
+  moving systems read a "local time", and the result is that motion cannot be
+  detected. Einstein's paper "Zur Elektrodynamik bewegter Körper" (received by
+  Annalen der Physik 30 June 1905, published 26 September 1905) instead took two
+  postulates as starting points: the principle of relativity and the independence
+  of the speed of light from the motion of the source. He reconciled them by
+  analysing how simultaneity of distant events is defined by clock synchronization
+  with light signals. Simultaneity then depends on the frame, the Lorentz
+  transformations follow from kinematics alone, contraction and time dilation are
+  kinematic effects, and the ether is declared superfluous. The mathematics was
+  largely already in Lorentz (1904) and Poincaré (1905). What was new was the
+  interpretation, which removed absolute time.
+hidden_target:
+  statement: >
+    The laws of physics take the same form in all inertial frames, and light
+    propagates in vacuum with the same speed c in every inertial frame, independent
+    of the motion of its source. These two postulates are compatible only if
+    simultaneity of distant events is relative to the frame. The coordinates of two
+    inertial frames are then related by the Lorentz transformation, not the
+    Galilean one. Consequences: moving rods are contracted by sqrt(1 - v^2/c^2),
+    moving clocks run slow by the same factor, velocities compose by the
+    relativistic addition law, and Maxwell's equations are covariant without any
+    privileged ether frame. The ether becomes unnecessary.
+  formal: "t_p = gamma*(t - v*x/c**2); x_p = gamma*(x - v*t); y_p = y; z_p = z; gamma = 1/sqrt(1 - v**2/c**2)"
+knowledge_state_before:
+  - claim: >
+      Maxwell's equations for the electromagnetic field, with light as an
+      electromagnetic wave travelling at c = 1/sqrt(epsilon_0 mu_0). In the
+      standard interpretation this speed is relative to the luminiferous ether.
+    date: "1865"
+    source: Maxwell, "A Dynamical Theory of the Electromagnetic Field" (1865); Treatise on Electricity and Magnetism (1873)
+    confidence: established
+  - claim: Hertz's experimental production and detection of electromagnetic waves, confirming Maxwell's theory.
+    date: 1887-1888
+    confidence: established
+  - claim: >
+      Newtonian mechanics is invariant under Galilean transformations
+      (x' = x - vt, t' = t). This is the classical principle of relativity for
+      mechanics. Maxwell's equations are not invariant under Galilean
+      transformations.
+    confidence: established
+  - claim: >
+      Stellar aberration. The apparent positions of stars shift annually by up to
+      about 20.5 arcsec, consistent with the Earth moving at about 30 km/s through
+      a stationary medium (or, in emission terms, with light corpuscles).
+    date: "1729"
+    source: Bradley, Philosophical Transactions (1729)
+    confidence: established
+  - claim: >
+      Fresnel's partial ether drag. Light in a medium of index n moving at speed v
+      is dragged by the fraction (1 - 1/n^2) of v. Introduced to explain why
+      refraction does not reveal the Earth's motion at first order (Arago's prism
+      experiment).
+    date: "1818"
+    source: Fresnel, letter to Arago (1818)
+    confidence: established
+  - claim: >
+      Fizeau's moving-water experiment measured a change in the speed of light in
+      flowing water consistent with Fresnel's drag coefficient, not with full drag
+      or zero drag. Michelson and Morley repeated it with higher precision in 1886.
+    date: "1851"
+    source: Fizeau, Comptes Rendus 33 (1851); Michelson & Morley, American Journal of Science 31 (1886)
+    confidence: established
+  - claim: >
+      Airy's water-filled telescope (1871) showed that aberration does not change
+      when the telescope is filled with water, as Fresnel drag predicts.
+    date: "1871"
+    confidence: established
+  - claim: >
+      The Michelson-Morley interferometer experiment. An expected second-order
+      (v^2/c^2) fringe shift of about 0.4 fringe was not seen; the observed shift
+      was below about 0.01 fringe (a few percent of the expectation). Michelson's
+      1881 Potsdam experiment had already been negative but less sensitive.
+    date: "1887"
+    source: Michelson & Morley, "On the Relative Motion of the Earth and the Luminiferous Ether", American Journal of Science 34 (1887) 333-345
+    confidence: established
+  - claim: >
+      FitzGerald's contraction hypothesis. Bodies moving through the ether are
+      shortened along the direction of motion by a second-order amount, which
+      exactly cancels the Michelson-Morley effect.
+    date: "1889"
+    source: FitzGerald, "The Ether and the Earth's Atmosphere", Science 13 (1889)
+    confidence: established
+  - claim: >
+      Lorentz's electron theory. A stationary ether, charged particles
+      (electrons/ions) that act on it, the theorem of corresponding states using a
+      "local time" t' = t - v x / c^2 to first order, and an independent
+      contraction hypothesis to explain Michelson-Morley.
+    date: "1892-1895"
+    source: Lorentz, Versuch einer Theorie der electrischen und optischen Erscheinungen in bewegten Körpern (Leiden, 1895)
+    confidence: established
+  - claim: >
+      Larmor wrote down transformations equivalent to the Lorentz transformations,
+      exact to second order, including a time-dilation factor for moving electron
+      systems.
+    date: 1897-1900
+    source: Larmor, Aether and Matter (Cambridge, 1900)
+    confidence: likely
+  - claim: >
+      Poincaré's essay on the measurement of time argued that the simultaneity of
+      distant events has no intuitive meaning and is fixed by convention, for
+      example by exchanging signals and correcting for transmission time.
+    date: "1898"
+    source: Poincaré, "La mesure du temps", Revue de métaphysique et de morale 6 (1898)
+    confidence: established
+  - claim: >
+      Poincaré interpreted Lorentz's local time as the time read by clocks
+      synchronized by light signals in a moving frame (to first order), and stated
+      a "principle of relativity" as a general law in 1904 at the St. Louis
+      congress.
+    date: 1900-1904
+    source: Poincaré, Lorentz Festschrift paper (1900); St. Louis address (1904)
+    confidence: established
+  - claim: >
+      Lorentz's 1904 paper gave transformations of the full Lorentz form (with a
+      scale factor l later set to 1) and the corresponding transformation of fields
+      for a system moving at any speed below c. It kept the ether and treated t' as
+      an auxiliary variable. His field transformations did not make the equations
+      exactly invariant when charges are present.
+    date: "1904"
+    source: Lorentz, "Electromagnetic phenomena in a system moving with any velocity smaller than that of light", Proc. Royal Netherlands Academy (KNAW) 6 (1904)
+    confidence: established
+  - claim: >
+      Poincaré's "Sur la dynamique de l'électron" (Comptes Rendus note of 5 June
+      1905; long Palermo memoir submitted July 1905, published 1906) named the
+      Lorentz transformations, showed that they form a group, corrected Lorentz's
+      charge-density and velocity transformations, and established exact Lorentz
+      covariance of the Maxwell-Lorentz equations. It did not abolish the ether.
+    date: "1905-06-05"
+    source: Poincaré, Comptes Rendus 140 (1905); Rendiconti del Circolo Matematico di Palermo 21 (1906)
+    confidence: established
+  - claim: >
+      Kaufmann's deflection experiments (1901-1903) showed that the mass of beta
+      electrons depends on velocity. Several electron models (Abraham's rigid
+      sphere, Lorentz's deformable electron) competed to fit the data.
+    date: 1901-1905
+    confidence: established
+  - claim: >
+      Other second-order ether-drift experiments also gave null results:
+      Rayleigh (1902) and Brace (1904) on motion-induced birefringence, and
+      Trouton and Noble (1903) on torque on a charged capacitor.
+    date: 1902-1904
+    confidence: likely
+anomalies:
+  - claim: >
+      Null result of Michelson-Morley at second order, in tension with a stationary
+      ether unless an ad hoc contraction is added.
+    date: "1887"
+    confidence: established
+  - claim: >
+      Stellar aberration requires that the ether not be dragged by the Earth, while
+      Michelson-Morley seemed to require that it be dragged. Neither full drag nor
+      no drag fit both without further hypotheses.
+    confidence: established
+  - claim: >
+      Electrodynamic asymmetry. In the theory, a magnet moving past a stationary
+      conductor and a conductor moving past a stationary magnet are described
+      differently (an electric field in one case, a motional EMF in the other), but
+      the observed current depends only on relative motion. Einstein opens the
+      1905 paper with this example.
+    source: Einstein 1905, introduction
+    confidence: established
+  - claim: >
+      Systematic failure of every attempt to detect absolute motion through the
+      ether, at first and second order. By 1904 this had become a general pattern,
+      not a single result, and Lorentz and Poincaré were seeking a theory in which
+      the failure holds at all orders.
+    confidence: established
+  - claim: >
+      Maxwell's equations are not Galilean-invariant, while mechanics is. The two
+      accepted theories carry different transformation groups.
+    confidence: established
+assumptions_explicit:
+  - claim: >
+      There exists a luminiferous ether at rest in some frame. Electromagnetic
+      fields are states of it, and light moves at c relative to it.
+    confidence: established
+  - claim: >
+      Newtonian mechanics, with the Galilean principle of relativity, holds for
+      matter.
+    confidence: established
+  - claim: >
+      Physical explanations of contraction and of mass variation should come from
+      the dynamics of the forces holding matter together (electromagnetic, in the
+      electromagnetic world view).
+    confidence: likely
+assumptions_implicit:
+  - claim: >
+      Time is absolute. Simultaneity of distant events is frame-independent and
+      needs no operational definition, so "the same time t" is meaningful
+      everywhere at once.
+    dropped_by_discovery: true
+    confidence: established
+  - claim: >
+      The Galilean transformation is the correct kinematic relation between
+      inertial frames. Deviations (local time, contraction) are dynamical effects
+      on physical bodies and clocks, not properties of space and time.
+    dropped_by_discovery: true
+    confidence: established
+  - claim: >
+      A wave must be a wave in something, so light needs a medium, and that medium
+      defines a privileged rest frame.
+    dropped_by_discovery: true
+    confidence: established
+  - claim: >
+      Lengths of rigid bodies are frame-independent, so measuring a moving rod's
+      length needs no specification of simultaneity.
+    dropped_by_discovery: true
+    confidence: established
+  - claim: >
+      Mass is a fixed property of a body, independent of its energy content
+      (dropped in Einstein's follow-up paper on E = mc^2, September 1905).
+    dropped_by_discovery: false
+    confidence: likely
+the_move:
+  types: [drop_shared_assumption, symmetry_invariance, unify_conflicting_theories, change_the_question]
+  description: >
+    Einstein raised two empirical generalizations to postulates: the principle of
+    relativity, motivated by the failure of all ether-drift experiments and by the
+    magnet-conductor asymmetry, and the light postulate, taken from Maxwell-Lorentz
+    theory in the ether frame. He noticed that they look contradictory only because
+    of the unstated assumption that simultaneity is absolute. He gave an operational
+    definition of simultaneity using light-signal synchronization and showed that
+    it is frame-dependent. From that he derived the Lorentz transformation as
+    kinematics, before introducing any dynamics. This changed the question from
+    "what forces make moving bodies contract and moving clocks lag so that the
+    ether hides itself?" to "what are the transformation laws between inertial
+    frames given these two principles?" Lorentz's local time became the actual time
+    in the moving frame, and the ether became superfluous rather than refuted.
+    Einstein later (1955 letter to Seelig) said the decisive step came after a
+    conversation with Besso and was the recognition that time is suspect. The
+    exact timeline within 1905 rests on these late recollections.
+verification:
+  how: >
+    Initially through consistency: the theory reproduces all known null results
+    (Michelson-Morley, Trouton-Noble, Rayleigh-Brace) and Fizeau's drag coefficient
+    as the first-order term of relativistic velocity addition, which Laue showed in
+    1907. Early experimental support was mixed. Kaufmann (1906) claimed his electron
+    deflection data favoured Abraham over the Lorentz-Einstein mass formula, and
+    Einstein did not give up the theory. Bucherer (1908) and later more careful
+    experiments (Neumann 1914, and others) favoured Lorentz-Einstein, though the
+    precision of the early tests is debated. Minkowski's 1908 spacetime formulation
+    did much to win over mathematicians and physicists. Later direct tests: time
+    dilation of cosmic-ray muons (Rossi and Hall 1941), the transverse Doppler
+    effect (Ives and Stilwell 1938), Kennedy-Thorndike (1932).
+  data:
+    - Michelson-Morley 1887 null result (upper bound about 1/40 of expected fringe shift)
+    - Fizeau 1851 drag coefficient (1 - 1/n^2), reproduced by relativistic velocity addition
+    - Stellar aberration angle of about 20.5 arcsec
+    - Kaufmann 1901-1906 and Bucherer 1908 electron e/m versus velocity
+    - Trouton-Noble 1903 null torque
+    - Ives-Stilwell 1938 transverse Doppler, Rossi-Hall 1941 muon lifetime (post-snapshot)
+  time_to_acceptance: >
+    Roughly 5-10 years among German-speaking theoretical physicists (Planck took
+    it up in 1906, and Minkowski's 1908 lecture was decisive for many). Experimental
+    physicists, and in France and Britain, came later. Lorentz never fully gave up
+    the ether. Nobel committees never cited relativity.
+dead_ends:
+  - who: George Gabriel Stokes
+    attempt: >
+      Complete ether drag (1845). The ether is carried along by the Earth near its
+      surface, which explains the Michelson-Morley null result, with an
+      irrotational flow chosen to preserve aberration.
+    why_failed: >
+      Lorentz (1886) showed that the conditions Stokes needed (irrotational
+      flow and zero slip at the Earth's surface) are mutually inconsistent for an
+      incompressible ether. The theory also conflicts with Fizeau's partial drag.
+      The Lodge rotating-disc experiments (1893) found no drag by nearby moving
+      massive bodies.
+  - who: Hertz
+    attempt: >
+      Electrodynamics of moving bodies with the ether fully carried by matter
+      (1890). This made the equations Galilean-covariant in form.
+    why_failed: Contradicted Fizeau's partial drag and the electron-theory account of dispersion.
+  - who: Walther Ritz (and earlier emission ideas)
+    attempt: >
+      Ballistic or emission theory (1908, after the snapshot). Light speed is c
+      relative to the source, which keeps Galilean kinematics and explains the
+      Michelson-Morley null result directly.
+    why_failed: >
+      De Sitter (1913) argued that double-star observations would show
+      distortions of the orbits (ghost images) if light speed depended on source
+      velocity, and none are seen. Extinction-theorem objections weakened that
+      argument, and later tests with fast-moving sources (e.g. Alväger et al. 1964,
+      neutral pion decay photons) closed it. Einstein himself said he considered
+      and abandoned an emission-type theory before 1905.
+  - who: Einstein (pre-1905)
+    attempt: >
+      Retaining Galilean kinematics and modifying electrodynamics, possibly along
+      emission-theory lines.
+    why_failed: >
+      By his own account, he could not find a satisfactory field theory with
+      source-dependent light speed. Norton (2004) reconstructs this period.
+      Evidence is mostly from later recollections.
+  - who: Max Abraham
+    attempt: >
+      Rigid spherical electron with purely electromagnetic mass (1902-1903). The
+      ether frame is privileged, and the mass-velocity relation differs from
+      Lorentz's.
+    why_failed: >
+      Not Lorentz-covariant. Bucherer (1908) and later electron deflection
+      experiments favoured Lorentz-Einstein, and it could not account for the
+      second-order null results without extra assumptions.
+near_misses:
+  - who: Hendrik Antoon Lorentz
+    had: >
+      The Lorentz transformation (1904, in almost final form), the contraction
+      hypothesis, local time, the mass-velocity dependence, and a nearly covariant
+      electron theory explaining all known null results.
+    missed: >
+      He treated local time as a mathematical auxiliary and the ether frame as
+      real. Contraction was a dynamical effect on the forces between molecules, and
+      the transformations were a theorem about corresponding states, not
+      kinematics. He did not see that the principle of relativity could be a
+      postulate that redefines time. Lorentz himself acknowledged in 1909 (The
+      Theory of Electrons) and later that Einstein's approach was simpler, while
+      maintaining a preference for the ether.
+  - who: Henri Poincaré
+    had: >
+      Conventionality of simultaneity (1898), light-signal synchronization giving
+      local time (1900), the principle of relativity as a general law (1904), the
+      group property and exact covariance of the Lorentz transformations, and
+      invariance of x^2+y^2+z^2-c^2t^2 with an imaginary time coordinate (1905-1906).
+    missed: >
+      He kept the ether as an undetectable but real frame, and distinguished "true"
+      time from the "apparent" local time measured by moving observers. He did not
+      derive the transformations from the two postulates as kinematics, or build
+      the theory on the relativity of simultaneity. Whether this counts as a
+      genuine conceptual difference or a matter of emphasis is contested. Some
+      authors (Whittaker 1953 most prominently) credited Poincaré and Lorentz with
+      the theory. Most historians (Pais, Miller, Darrigol, Galison) see a real
+      difference in the interpretation of time and the ether.
+  - who: Joseph Larmor
+    had: Second-order transformations including time dilation for electron systems (Aether and Matter, 1900).
+    missed: Kept the ether and did not treat the transformations as a symmetry of physics or of time itself.
+  - who: Woldemar Voigt
+    had: >
+      A transformation (1887) that leaves the wave equation invariant and is the
+      Lorentz transformation up to a scale factor.
+    missed: Treated it only as a mathematical device for the Doppler problem in an elastic medium. It had no physical interpretation and went unnoticed until Lorentz acknowledged it in 1909.
+oracle_candidates:
+  - kind: symbolic
+    description: >
+      Lorentz invariance of Maxwell's equations. In sympy, apply the candidate
+      coordinate transformation and the induced field transformation (E, B as an
+      antisymmetric tensor F_{mu nu}) to the source-free Maxwell equations, or to
+      the scalar wave equation d^2/dt^2 - c^2 nabla^2 as a cheaper first gate, and
+      check that the transformed equations are identical in form. A Galilean
+      candidate fails, and a Lorentz (gamma-factor) candidate passes. Also check the
+      group property (composition of two boosts is a boost with velocity
+      (u+v)/(1+uv/c^2)).
+    llm_free: true
+    cost: cheap
+  - kind: symbolic
+    description: >
+      Invariance of the interval. Verify symbolically that c^2 t^2 - x^2 - y^2 - z^2
+      is preserved by the candidate transformation, and that c is a fixed point of
+      the velocity-composition law.
+    llm_free: true
+    cost: cheap
+  - kind: correspondence_limit
+    description: >
+      Newtonian limit. Series-expand the candidate transformation, velocity
+      addition and kinetic energy in v/c. To zeroth and first order they must reduce
+      to the Galilean transformation and to (1/2) m v^2. Mechanical check with
+      sympy series(), with a tolerance on the order at which deviations appear.
+    llm_free: true
+    cost: cheap
+  - kind: data_fit
+    description: >
+      Michelson-Morley null result. Compute the candidate's predicted fringe shift
+      for the 1887 apparatus (effective arm length about 11 m, wavelength about
+      5.9e-7 m, v = 30 km/s, rotation by 90 degrees). It must be below 0.01 fringe.
+      A stationary ether with Galilean kinematics predicts about 0.4 fringe and
+      fails. A contraction-only theory also passes, so this oracle is necessary,
+      not sufficient. Pair it with Kennedy-Thorndike (unequal arms) to rule out
+      pure contraction.
+    llm_free: true
+    cost: cheap
+  - kind: data_fit
+    description: >
+      Fizeau drag. The candidate's velocity addition law, applied to light of
+      speed c/n in water moving at v, must give c/n + v(1 - 1/n^2) to first order
+      in v (Fresnel coefficient). Check against Fizeau 1851 / Michelson-Morley 1886
+      measured coefficient within its stated error.
+    llm_free: true
+    cost: cheap
+  - kind: data_fit
+    description: >
+      Stellar aberration. The candidate must give an aberration angle of about
+      v/c = 20.5 arcsec for v = 30 km/s, unchanged by filling the telescope with
+      water (Airy 1871).
+    llm_free: true
+    cost: cheap
+  - kind: prediction
+    description: >
+      Held-out later experiments the solver never sees: Ives-Stilwell transverse
+      Doppler shift (1938), muon lifetime dilation (Rossi-Hall 1941, CERN muon g-2
+      storage ring 1977), Kennedy-Thorndike (1932). Score the quantitative
+      predictions against published values. Note that these are post-snapshot and
+      must be withheld from the knowledge pack.
+    llm_free: true
+    cost: cheap
+  - kind: consistency
+    description: >
+      Postulate check. Given the candidate transformation, verify mechanically
+      that (a) a light pulse has speed c in both frames regardless of source speed,
+      and (b) the transformation forms a group parametrized by relative velocity
+      with no privileged frame (no parameter referring to an absolute rest frame).
+      Part (b) separates Einstein from Lorentz-with-ether only if the solver states
+      its theory in a structured form. It does not catch an ether retained in
+      prose.
+    llm_free: true
+    cost: cheap
+  - kind: llm_judge
+    description: >
+      Did the solver surface absolute simultaneity as an assumption and drop it?
+      Needed for the axiomatizer test, since Lorentz-1904 math with an ether passes
+      every empirical oracle above. A rubric-based judge reads the solver's stated
+      axioms and checks for an explicit operational definition of simultaneity.
+      This oracle uses an LLM, and the rubric should be fixed in advance.
+    llm_free: false
+    cost: moderate
+contamination:
+  level: total
+  post_cutoff: false
+  notes: >
+    Every frontier model can recite both postulates, the Lorentz transformation,
+    the magnet-conductor opening and the relativity of simultaneity, and many will
+    name "absolute simultaneity" as the dropped assumption with no reasoning at all.
+    A pass on the plain case is evidence of recall only. A model with a pre-1905
+    training cutoff would have seen Lorentz 1904 and possibly Poincaré 1898/1904,
+    so it could produce the transformation equations without the reinterpretation.
+    The interesting signal is whether it questions simultaneity. Caveats about a
+    time-locked model test (for example a talkie-1930-style model trained only on
+    pre-1930 text, or a model cut off before 1905). A 1930 cutoff is useless for
+    this case because SR was textbook material by then. A pre-1905 corpus is very
+    small, heavily skewed to published journals and books, and leaks through
+    reprints, later editions and metadata dated after 1905. A pre-1905 model that
+    fails tells us little about frontier models, which are far larger. A success
+    would be striking but hard to certify as leak-free. Obfuscated variants
+    (renamed constants, a toy world with a different invariant speed, or an
+    analogous acoustic/"sonic relativity" setting where the analogous postulate is
+    false) are needed to measure reasoning.
+sources:
+  - citation: Einstein, A. (1905). "Zur Elektrodynamik bewegter Körper." Annalen der Physik 17, 891-921.
+    kind: primary
+  - citation: Einstein, A. (1905). "Ist die Trägheit eines Körpers von seinem Energieinhalt abhängig?" Annalen der Physik 18.
+    kind: primary
+  - citation: Michelson, A. A. & Morley, E. W. (1887). "On the Relative Motion of the Earth and the Luminiferous Ether." American Journal of Science 34, 333-345.
+    kind: primary
+  - citation: Lorentz, H. A. (1895). Versuch einer Theorie der electrischen und optischen Erscheinungen in bewegten Körpern. Leiden, Brill.
+    kind: primary
+  - citation: Lorentz, H. A. (1904). "Electromagnetic phenomena in a system moving with any velocity smaller than that of light." Proceedings of the Royal Netherlands Academy of Arts and Sciences 6.
+    kind: primary
+  - citation: Poincaré, H. (1898). "La mesure du temps." Revue de métaphysique et de morale 6.
+    kind: primary
+  - citation: Poincaré, H. (1905). "Sur la dynamique de l'électron." Comptes Rendus de l'Académie des Sciences 140; extended version in Rendiconti del Circolo Matematico di Palermo 21 (1906).
+    kind: primary
+  - citation: FitzGerald, G. F. (1889). "The Ether and the Earth's Atmosphere." Science 13.
+    kind: primary
+  - citation: Larmor, J. (1900). Aether and Matter. Cambridge University Press.
+    kind: primary
+  - citation: Pais, A. (1982). 'Subtle is the Lord...' The Science and the Life of Albert Einstein. Oxford University Press.
+    kind: secondary
+  - citation: Miller, A. I. (1981). Albert Einstein's Special Theory of Relativity. Emergence (1905) and Early Interpretation (1905-1911). Addison-Wesley.
+    kind: secondary
+  - citation: Holton, G. (1969). "Einstein, Michelson, and the 'Crucial' Experiment." Isis 60. Reprinted in Holton, Thematic Origins of Scientific Thought (Harvard University Press, 1973).
+    kind: secondary
+  - citation: Galison, P. (2003). Einstein's Clocks, Poincaré's Maps. Empires of Time. W. W. Norton.
+    kind: secondary
+  - citation: Darrigol, O. (2000). Electrodynamics from Ampère to Einstein. Oxford University Press.
+    kind: secondary
+  - citation: Norton, J. D. (2004). "Einstein's Investigations of Galilean Covariant Electrodynamics prior to 1905." Archive for History of Exact Sciences 59.
+    kind: secondary
+  - citation: Whittaker, E. T. (1953). A History of the Theories of Aether and Electricity, Vol. 2. Thomas Nelson.
+    kind: secondary
+open_issues:
+  - >
+    Historiographical debate on Michelson-Morley. Holton (1969) argues that the
+    experiment played little or no direct role in Einstein's path, citing the 1905
+    paper's mention of only "unsuccessful attempts to discover any motion of the
+    earth relatively to the light medium" and Einstein's later statements. Einstein's
+    own recollections (Shankland interviews 1950-1954, 1922 Kyoto lecture as
+    reported by Ishiwara) are inconsistent about whether and when he knew of it.
+    Most historians now hold that he knew of it, probably via Lorentz 1895, but that
+    the magnet-conductor asymmetry, Fizeau and aberration, and the general failure
+    of drift experiments weighed more. The knowledge pack should include
+    Michelson-Morley, because it was available, without implying it was the
+    trigger.
+  - >
+    Whether Einstein read Poincaré's 1898 essay or the 1904 St. Louis address
+    before 1905 is uncertain. Solovine's recollection says the Olympia Academy read
+    Poincaré's La Science et l'hypothèse (1902). The essay "La mesure du temps" was
+    reprinted in La Valeur de la science (1905), after the snapshot. Galison argues
+    for strong indirect influence via patent-office work on clock synchronization.
+    This is suggestive but not documented.
+  - Einstein had not read Lorentz 1904 before writing the 1905 paper, by most accounts. Confirm against Pais.
+  - >
+    Larmor's 1897/1900 transformations: confirm exact form and that time dilation
+    is explicit (commonly stated; not checked against the text).
+  - Michelson-Morley numbers (expected 0.4 fringe, observed under 0.01-0.02, arm length about 11 m) are standard textbook figures; confirm against the 1887 paper.
+  - Dates for Rayleigh 1902, Brace 1904, Trouton-Noble 1903 null experiments were not checked against primary sources.
+  - The reported Fizeau-drag derivation via relativistic velocity addition is attributed to Laue 1907; confirm.
+  - Lorentz's 1886 critique of Stokes; confirm date and the exact form of the inconsistency argument.
+  - The Seelig 1955 letter and the Besso conversation timing (about five weeks before submission) rest on Einstein's late recollections.
+  - Alväger et al. 1964 citation details for the pion-decay photon speed test were not checked.

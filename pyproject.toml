@@ -1,0 +1,13 @@
+[project]
+name = "researchlab"
+version = "0.1.0"
+description = "Discovery engine: can an AI system produce scientific results rather than recall them?"
+requires-python = ">=3.11"
+dependencies = ["numpy", "scipy", "sympy", "jsonschema", "pyyaml", "anthropic>=2.3"]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
